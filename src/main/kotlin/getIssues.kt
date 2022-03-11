@@ -21,8 +21,11 @@ import io.ktor.http.*
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
 import kotlinx.coroutines.runBlocking
+import kotlinx.serialization.Transient
+import org.jetbrains.annotations.Nullable
 import java.time.Duration
 import java.time.Instant
+import java.util.*
 
 val token: String = System.getenv("GithubToken")
 
@@ -59,23 +62,28 @@ suspend fun githubIssues(org: String) {
         }.awaitAll().filterNotNull();
         //counting nm of open issues
         openIssues(issues)
-        writetoFile(issues.joinToString("\n\n"), "outputIssues")
-        //writing to file
 
+        // Filtering the pullrequests (as they are not rly issues) and writing to file
+        val issuesfiltered = issues.flatten().filter { it.pull_request == PullRequest(null,null) }
+        writetoFile(issuesfiltered.joinToString("\n\n"), "outputIssues")
+
+        // Just printing the urls of open issues
+        issuesfiltered.forEach{println(it.html_url)}
     }
 }
 
 // Counts number of open issues
 suspend fun openIssues(issues: List<List<Issues>>){
+    var total = 0
     issues.forEach{
-        var n = 0
-        it.forEach{
-            n++
-        }
-        if(it != emptyList<Issues>()) {
+        if(it.isNotEmpty()){
+            val list = it
+            val n = list.filter{it.pull_request == PullRequest(null,null)}.count()
             println(it[0].repository + " has " + n + " open issues")
+            total += n
         }
     }
+    println("Total Open Issues: "+ total)
 }
 
 // Took me way to long to just add repo to the data class object (should be a shorter way)
@@ -124,6 +132,7 @@ data class User(
 @Serializable
 data class Issues(
     var repository: String? = null,
+    val pull_request: PullRequest = PullRequest(null,null),
     val html_url: String,
     val body: String?,
     val number: String,
@@ -131,4 +140,10 @@ data class Issues(
     val user: User,
     val state: String,
     val created_at: String
+)
+
+@Serializable
+data class PullRequest(
+    val url: String?,
+    val merged_at: String?
 )
