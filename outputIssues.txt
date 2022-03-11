@@ -1,0 +1,1817 @@
+[]
+
+[]
+
+[Issues(repository=adyen-rails-online-payments, html_url=https://github.com/adyen-examples/adyen-rails-online-payments/pull/14, body=Bumps [nokogiri](https://github.com/sparklemotion/nokogiri) from 1.11.7 to 1.13.2.
+<details>
+<summary>Release notes</summary>
+<p><em>Sourced from <a href="https://github.com/sparklemotion/nokogiri/releases">nokogiri's releases</a>.</em></p>
+<blockquote>
+<h2>1.13.2 / 2022-02-21</h2>
+<h3>Security</h3>
+<ul>
+<li>[CRuby] Vendored libxml2 is updated from 2.9.12 to 2.9.13. This update addresses <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-23308">CVE-2022-23308</a>.</li>
+<li>[CRuby] Vendored libxslt is updated from 1.1.34 to 1.1.35. This update addresses <a href="https://nvd.nist.gov/vuln/detail/CVE-2021-30560">CVE-2021-30560</a>.</li>
+</ul>
+<p>Please see <a href="https://github.com/sparklemotion/nokogiri/security/advisories/GHSA-fq42-c5rg-92c2">GHSA-fq42-c5rg-92c2</a> for more information about these CVEs.</p>
+<h3>Dependencies</h3>
+<ul>
+<li>[CRuby] Vendored libxml2 is updated from 2.9.12 to 2.9.13. Full changelog is available at <a href="https://download.gnome.org/sources/libxml2/2.9/libxml2-2.9.13.news">https://download.gnome.org/sources/libxml2/2.9/libxml2-2.9.13.news</a></li>
+<li>[CRuby] Vendored libxslt is updated from 1.1.34 to 1.1.35. Full changelog is available at <a href="https://download.gnome.org/sources/libxslt/1.1/libxslt-1.1.35.news">https://download.gnome.org/sources/libxslt/1.1/libxslt-1.1.35.news</a></li>
+</ul>
+<hr />
+<p>SHA256 checksums:</p>
+<pre><code>63469a9bb56a21c62fbaea58d15f54f8f167ff6fde51c5c2262072f939926fdd  nokogiri-1.13.2-aarch64-linux.gem
+2986617f982f645c06f22515b721e6d2613dd69493e5c41ddd03c4830c3b3065  nokogiri-1.13.2-arm64-darwin.gem
+aca1d66206740b29d0d586b1d049116adcb31e6cdd7c4dd3a96eb77da215a0c4  nokogiri-1.13.2-java.gem
+b9e4eea1a200d9a927a5bc7d662c427e128779cba0098ea49ddbdb3ffc3ddaec  nokogiri-1.13.2-x64-mingw-ucrt.gem
+48d5493fec495867c5516a908a068c1387a1d17c5aeca6a1c98c089d9d9fdcf8  nokogiri-1.13.2-x64-mingw32.gem
+62034d7aaaa83fbfcb8876273cc5551489396841a66230d3200b67919ef76cf9  nokogiri-1.13.2-x86-linux.gem
+e07237b82394017c2bfec73c637317ee7dbfb56e92546151666abec551e46d1d  nokogiri-1.13.2-x86-mingw32.gem
+01937a6551d997aca32468da08ced0878ba4e1dfd0b51d953617185eefc57ffa  nokogiri-1.13.2-x86_64-darwin.gem
+70112ae29939d4b5e1c8ba13e1f0d82ff43cd5564ce138f622fe6ebddc503654  nokogiri-1.13.2-x86_64-linux.gem
+def6b330c53dcabe8b7d545cf9db4dfb45e9d39040b531eb81aee0c840fd66c2  nokogiri-1.13.2.gem
+</code></pre>
+<h2>1.13.1 / 2022-01-13</h2>
+<h3>Fixed</h3>
+<ul>
+<li>Fix <code>Nokogiri::XSLT.quote_params</code> regression in v1.13.0 that raised an exception when non-string stylesheet parameters were passed. Non-string parameters (e.g., integers and symbols) are now explicitly supported and both keys and values will be stringified with <code>#to_s</code>. [<a href="https://github-redirect.dependabot.com/sparklemotion/nokogiri/issues/2418">#2418</a>]</li>
+<li>Fix HTML5 CSS selector query regression in v1.13.0 that raised an <code>Nokogiri::XML::XPath::SyntaxError</code> when parsing XPath attributes mixed into the CSS query. Although this mash-up of XPath and CSS syntax previously worked unintentionally, it is now an officially supported feature and is documented as such. [<a href="https://github-redirect.dependabot.com/sparklemotion/nokogiri/issues/2419">#2419</a>]</li>
+</ul>
+<hr />
+<p>SHA265 checksums</p>
+<pre lang="text"><code>9206569b36f0066f943f174a832b50e69551c2a81333b7a62d4073e97ea4c3c6  nokogiri-1.13.1-aarch64-linux.gem
+39d73197506acd3748c84600e000bb44ccd930695a9fc8b489b1b4df37dd14f0  nokogiri-1.13.1-arm64-darwin.gem
+1aaa315876e2049b4418c60794f1f55bdb04cc9583b9b664dbb3c52696695207  nokogiri-1.13.1-java.gem
+37d97e5fdaae4a14cc7122598616ac484d71c271004fb6cce6684c6734f41552  nokogiri-1.13.1-x64-mingw-ucrt.gem
+683b030957c747d35499f8d766cad51a31ae9456098225af62fab7b27fe20129  nokogiri-1.13.1-x64-mingw32.gem
+690958426e3151ba0c22e8d88637dba5e0c636107f3def2ffc10e334d451e61f  nokogiri-1.13.1-x86-linux.gem
+&lt;/tr&gt;&lt;/table&gt; 
+</code></pre>
+</blockquote>
+<p>... (truncated)</p>
+</details>
+<details>
+<summary>Changelog</summary>
+<p><em>Sourced from <a href="https://github.com/sparklemotion/nokogiri/blob/main/CHANGELOG.md">nokogiri's changelog</a>.</em></p>
+<blockquote>
+<h2>1.13.2 / 2022-02-21</h2>
+<h3>Security</h3>
+<ul>
+<li>[CRuby] Vendored libxml2 is updated from 2.9.12 to 2.9.13. This update addresses <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-23308">CVE-2022-23308</a>.</li>
+<li>[CRuby] Vendored libxslt is updated from 1.1.34 to 1.1.35. This update addresses <a href="https://nvd.nist.gov/vuln/detail/CVE-2021-30560">CVE-2021-30560</a>.</li>
+</ul>
+<p>Please see <a href="https://github.com/sparklemotion/nokogiri/security/advisories/GHSA-fq42-c5rg-92c2">GHSA-fq42-c5rg-92c2</a> for more information about these CVEs.</p>
+<h3>Dependencies</h3>
+<ul>
+<li>[CRuby] Vendored libxml2 is updated from 2.9.12 to 2.9.13. Full changelog is available at <a href="https://download.gnome.org/sources/libxml2/2.9/libxml2-2.9.13.news">https://download.gnome.org/sources/libxml2/2.9/libxml2-2.9.13.news</a></li>
+<li>[CRuby] Vendored libxslt is updated from 1.1.34 to 1.1.35. Full changelog is available at <a href="https://download.gnome.org/sources/libxslt/1.1/libxslt-1.1.35.news">https://download.gnome.org/sources/libxslt/1.1/libxslt-1.1.35.news</a></li>
+</ul>
+<h2>1.13.1 / 2022-01-13</h2>
+<h3>Fixed</h3>
+<ul>
+<li>Fix <code>Nokogiri::XSLT.quote_params</code> regression in v1.13.0 that raised an exception when non-string stylesheet parameters were passed. Non-string parameters (e.g., integers and symbols) are now explicitly supported and both keys and values will be stringified with <code>#to_s</code>. [<a href="https://github-redirect.dependabot.com/sparklemotion/nokogiri/issues/2418">#2418</a>]</li>
+<li>Fix CSS selector query regression in v1.13.0 that raised an <code>Nokogiri::XML::XPath::SyntaxError</code> when parsing XPath attributes mixed into the CSS query. Although this mash-up of XPath and CSS syntax previously worked unintentionally, it is now an officially supported feature and is documented as such. [<a href="https://github-redirect.dependabot.com/sparklemotion/nokogiri/issues/2419">#2419</a>]</li>
+</ul>
+<h2>1.13.0 / 2022-01-06</h2>
+<h3>Notes</h3>
+<h4>Ruby</h4>
+<p>This release introduces native gem support for Ruby 3.1. Please note that Windows users should use the <code>x64-mingw-ucrt</code> platform gem for Ruby 3.1, and <code>x64-mingw32</code> for Ruby 2.6–3.0 (see <a href="https://rubyinstaller.org/2021/12/31/rubyinstaller-3.1.0-1-released.html">RubyInstaller 3.1.0 release notes</a>).</p>
+<p>This release ends support for:</p>
+<ul>
+<li>Ruby 2.5, for which <a href="https://www.ruby-lang.org/en/downloads/branches/">official support ended 2021-03-31</a>.</li>
+<li>JRuby 9.2, which is a Ruby 2.5-compatible release.</li>
+</ul>
+<h4>Faster, more reliable installation: Native Gem for ARM64 Linux</h4>
+<p>This version of Nokogiri ships experimental native gem support for the <code>aarch64-linux</code> platform, which should support AWS Graviton and other ARM Linux platforms. We don't yet have CI running for this platform, and so we're interested in hearing back from y'all whether this is working, and what problems you're seeing. Please send us feedback here: <a href="https://github.com/sparklemotion/nokogiri/discussions/2359">Feedback: Have you used the <code>aarch64-linux</code> native gem?</a></p>
+<h4>Publishing</h4>
+<p>This version of Nokogiri opts-in to the <a href="https://guides.rubygems.org/mfa-requirement-opt-in/">&quot;MFA required to publish&quot; setting</a> on Rubygems.org. This and all future Nokogiri gem files must be published to Rubygems by an account with multi-factor authentication enabled. This should provide some additional protection against supply-chain attacks.</p>
+<p>A related discussion about Trust exists at <a href="https://github-redirect.dependabot.com/sparklemotion/nokogiri/issues/2357">#2357</a> in which I invite you to participate if you have feelings or opinions on this topic.</p>
+<!-- raw HTML omitted -->
+</blockquote>
+<p>... (truncated)</p>
+</details>
+<details>
+<summary>Commits</summary>
+<ul>
+<li><a href="https://github.com/sparklemotion/nokogiri/commit/49b86631b7e84ec29b4b445f5a2f22fbcbf258b0"><code>49b8663</code></a> version bump to v1.13.2</li>
+<li><a href="https://github.com/sparklemotion/nokogiri/commit/472913378794b8cae21751b0777205e7c0606a95"><code>4729133</code></a> Merge pull request <a href="https://github-redirect.dependabot.com/sparklemotion/nokogiri/issues/2457">#2457</a> from sparklemotion/flavorjones-libxml-2.9.13-v1.13.x</li>
+<li><a href="https://github.com/sparklemotion/nokogiri/commit/379f757ef529feae0fafba2ae2c145c050d8a4fc"><code>379f757</code></a> dev(package): work around gnome mirrors with expired certs</li>
+<li><a href="https://github.com/sparklemotion/nokogiri/commit/95cf66ca9ff0fc5b85b6c74730b102afb50331c6"><code>95cf66c</code></a> dep: upgrade libxml2 2.9.12 → 2.9.13</li>
+<li><a href="https://github.com/sparklemotion/nokogiri/commit/d37dd02ea59d9dacf09063860007a205ef2eb82e"><code>d37dd02</code></a> dep: upgrade libxslt 1.1.34 → 1.1.35</li>
+<li><a href="https://github.com/sparklemotion/nokogiri/commit/59a93986ec208387e8a9bda94dbf4f89abc1c20d"><code>59a9398</code></a> dep: upgrade mini_portile 2.7 to 2.8</li>
+<li><a href="https://github.com/sparklemotion/nokogiri/commit/e8854632856b6641bc5439395ee8d7a3ad6b1a5c"><code>e885463</code></a> dev(package): handle either .tar.gz or .tar.xz archive names</li>
+<li><a href="https://github.com/sparklemotion/nokogiri/commit/7957c7b00936e282fbc93919647a3fb2502a4388"><code>7957c7b</code></a> style: rubocop</li>
+<li><a href="https://github.com/sparklemotion/nokogiri/commit/93d37f783f4204ab75faafd9c8d0685647facb48"><code>93d37f7</code></a> ci: Change Ruby setup to standard</li>
+<li><a href="https://github.com/sparklemotion/nokogiri/commit/15d32f6b02f1a1cd81e8b5130ae8f1f4785545fd"><code>15d32f6</code></a> ci: skip html5lib-tests on v1.13.x branch</li>
+<li>Additional commits viewable in <a href="https://github.com/sparklemotion/nokogiri/compare/v1.11.7...v1.13.2">compare view</a></li>
+</ul>
+</details>
+<br />
+
+
+[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=nokogiri&package-manager=bundler&previous-version=1.11.7&new-version=1.13.2)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+
+Dependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.
+
+[//]: # (dependabot-automerge-start)
+[//]: # (dependabot-automerge-end)
+
+---
+
+<details>
+<summary>Dependabot commands and options</summary>
+<br />
+
+You can trigger Dependabot actions by commenting on this PR:
+- `@dependabot rebase` will rebase this PR
+- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it
+- `@dependabot merge` will merge this PR after your CI passes on it
+- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it
+- `@dependabot cancel merge` will cancel a previously requested merge and block automerging
+- `@dependabot reopen` will reopen this PR if it is closed
+- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually
+- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot use these labels` will set the current labels as the default for future PRs for this repo and language
+- `@dependabot use these reviewers` will set the current reviewers as the default for future PRs for this repo and language
+- `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language
+- `@dependabot use this milestone` will set the current milestone as the default for future PRs for this repo and language
+
+You can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/adyen-examples/adyen-rails-online-payments/network/alerts).
+
+</details>, number=14, title=Bump nokogiri from 1.11.7 to 1.13.2, user=User(login=dependabot[bot], url=https://api.github.com/users/dependabot%5Bbot%5D, type=Bot), state=open, created_at=2022-02-26T06:48:25Z), Issues(repository=adyen-rails-online-payments, html_url=https://github.com/adyen-examples/adyen-rails-online-payments/issues/13, body=Integrate the new /sessions endpoint to leverage on a single API call, number=13, title=Introduce /sessions endpoint, user=User(login=gcatanese, url=https://api.github.com/users/gcatanese, type=User), state=open, created_at=2022-02-22T09:50:50Z), Issues(repository=adyen-rails-online-payments, html_url=https://github.com/adyen-examples/adyen-rails-online-payments/pull/12, body=Bumps [puma](https://github.com/puma/puma) from 5.3.2 to 5.6.2.
+<details>
+<summary>Release notes</summary>
+<p><em>Sourced from <a href="https://github.com/puma/puma/releases">puma's releases</a>.</em></p>
+<blockquote>
+<h2>5.6.1</h2>
+<p>Bugfixes</p>
+<ul>
+<li>Reverted a commit which appeared to be causing occasional blank header values (see issue <a href="https://github-redirect.dependabot.com/puma/puma/issues/2808">#2808</a>) (<a href="https://github-redirect.dependabot.com/puma/puma/issues/2809">#2809</a>)</li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/puma/puma/compare/v5.6.0...v5.6.1">https://github.com/puma/puma/compare/v5.6.0...v5.6.1</a></p>
+<h2>5.6.0 - Birdie's Version</h2>
+<p>Maintainer <a href="https://github.com/nateberkopec"><code>@​nateberkopec</code></a> had a daughter, nicknamed Birdie:</p>
+<p><img src="https://user-images.githubusercontent.com/845662/151062075-10fcd0f5-9076-44c1-a2e1-eaebf76bdd68.jpg" alt="slack-imgs" /></p>
+<h2>5.6.0 / 2022-01-25</h2>
+<ul>
+<li>
+<p>Features</p>
+<ul>
+<li>Support <code>localhost</code> integration in <code>ssl_bind</code> (<a href="https://github-redirect.dependabot.com/puma/puma/issues/2764">#2764</a>, <a href="https://github-redirect.dependabot.com/puma/puma/issues/2708">#2708</a>)</li>
+<li>Allow backlog parameter to be set with ssl_bind DSL (<a href="https://github-redirect.dependabot.com/puma/puma/issues/2780">#2780</a>)</li>
+<li>Remove yaml (psych) requirement in StateFile (<a href="https://github-redirect.dependabot.com/puma/puma/issues/2784">#2784</a>)</li>
+<li>Allow culling of oldest workers, previously was only youngest (<a href="https://github-redirect.dependabot.com/puma/puma/issues/2773">#2773</a>, <a href="https://github-redirect.dependabot.com/puma/puma/issues/2794">#2794</a>)</li>
+<li>Add worker_check_interval configuration option (<a href="https://github-redirect.dependabot.com/puma/puma/issues/2759">#2759</a>)</li>
+<li>Always send lowlevel_error response to client (<a href="https://github-redirect.dependabot.com/puma/puma/issues/2731">#2731</a>, <a href="https://github-redirect.dependabot.com/puma/puma/issues/2341">#2341</a>)</li>
+<li>Support for cert_pem and key_pem with ssl_bind DSL (<a href="https://github-redirect.dependabot.com/puma/puma/issues/2728">#2728</a>)</li>
+</ul>
+</li>
+<li>
+<p>Bugfixes</p>
+<ul>
+<li>Keep thread names under 15 characters, prevents breakage on some OSes (<a href="https://github-redirect.dependabot.com/puma/puma/issues/2733">#2733</a>)</li>
+<li>Fix two 'old-style-definition' compile warning (<a href="https://github-redirect.dependabot.com/puma/puma/issues/2807">#2807</a>, <a href="https://github-redirect.dependabot.com/puma/puma/issues/2806">#2806</a>)</li>
+<li>Log environment correctly using option value (<a href="https://github-redirect.dependabot.com/puma/puma/issues/2799">#2799</a>)</li>
+<li>Fix warning from Ruby master (will be 3.2.0) (<a href="https://github-redirect.dependabot.com/puma/puma/issues/2785">#2785</a>)</li>
+<li>extconf.rb - fix openssl with old Windows builds (<a href="https://github-redirect.dependabot.com/puma/puma/issues/2757">#2757</a>)</li>
+<li>server.rb - rescue handling (<code>Errno::EBADF</code>) for <code>@notify.close</code> (<a href="https://github-redirect.dependabot.com/puma/puma/issues/2745">#2745</a>)</li>
+</ul>
+</li>
+<li>
+<p>Refactor</p>
+<ul>
+<li>server.rb - refactor code using <a href="https://github.com/options"><code>@​options</code></a>[:remote_address] (<a href="https://github-redirect.dependabot.com/puma/puma/issues/2742">#2742</a>)</li>
+<li>[jruby] a couple refactorings - avoid copy-ing bytes (<a href="https://github-redirect.dependabot.com/puma/puma/issues/2730">#2730</a>)</li>
+</ul>
+</li>
+</ul>
+<h2>5.5.2</h2>
+<p>Re-allows UTF-8 in HTTP header values</p>
+<h2>5.5.1</h2>
+<p><a href="https://github.com/puma/puma/security/advisories/GHSA-48w2-rm65-62xx">https://github.com/puma/puma/security/advisories/GHSA-48w2-rm65-62xx</a></p>
+<h2>5.5.0 - Zawgyi</h2>
+<h2>5.5.0 / 2021-09-19</h2>
+<p><img src="https://user-images.githubusercontent.com/845662/133941603-b06119a7-189c-4fae-a021-07e4f3db9bf0.png" alt="14871224" /></p>
+<p>Zawgyi (Burmese: ဇော်ဂျီ) is a semi-immortal human alchemist and mystic with supernatural powers and often seen with a magic stick and a red hat. Zawgyi is one of the supernatural figures in Burmese mythology and folklore. Name chosen by new (Myanma!) contributor <a href="https://github.com/ye-lin-aung"><code>@​ye-lin-aung</code></a>.</p>
+<p>The headline feature of this release is a new integration with the <a href="https://github.com/socketry/localhost">localhost</a> gem. Localhost takes care of creating a self-signed SSL certificate for you in development. Require it in your <code>config.ru</code>:</p>
+<pre lang="ruby"><code>&lt;/tr&gt;&lt;/table&gt; 
+</code></pre>
+</blockquote>
+<p>... (truncated)</p>
+</details>
+<details>
+<summary>Changelog</summary>
+<p><em>Sourced from <a href="https://github.com/puma/puma/blob/master/History.md">puma's changelog</a>.</em></p>
+<blockquote>
+<h2>5.6.2 / 2022-02-11</h2>
+<ul>
+<li>Bugfix/Security
+<ul>
+<li>Response body will always be <code>close</code>d. (GHSA-rmj8-8hhh-gv5h, related to <a href="https://github-redirect.dependabot.com/puma/puma/issues/2809">#2809</a>)</li>
+</ul>
+</li>
+</ul>
+<h2>5.6.1 / 2022-01-26</h2>
+<ul>
+<li>Bugfixes
+<ul>
+<li>Reverted a commit which appeared to be causing occasional blank header values (<a href="https://github-redirect.dependabot.com/puma/puma/issues/2809">#2809</a>)</li>
+</ul>
+</li>
+</ul>
+<h2>5.6.0 / 2022-01-25</h2>
+<ul>
+<li>
+<p>Features</p>
+<ul>
+<li>Support <code>localhost</code> integration in <code>ssl_bind</code> (<a href="https://github-redirect.dependabot.com/puma/puma/issues/2764">#2764</a>, <a href="https://github-redirect.dependabot.com/puma/puma/issues/2708">#2708</a>)</li>
+<li>Allow backlog parameter to be set with ssl_bind DSL (<a href="https://github-redirect.dependabot.com/puma/puma/issues/2780">#2780</a>)</li>
+<li>Remove yaml (psych) requirement in StateFile (<a href="https://github-redirect.dependabot.com/puma/puma/issues/2784">#2784</a>)</li>
+<li>Allow culling of oldest workers, previously was only youngest (<a href="https://github-redirect.dependabot.com/puma/puma/issues/2773">#2773</a>, <a href="https://github-redirect.dependabot.com/puma/puma/issues/2794">#2794</a>)</li>
+<li>Add worker_check_interval configuration option (<a href="https://github-redirect.dependabot.com/puma/puma/issues/2759">#2759</a>)</li>
+<li>Always send lowlevel_error response to client (<a href="https://github-redirect.dependabot.com/puma/puma/issues/2731">#2731</a>, <a href="https://github-redirect.dependabot.com/puma/puma/issues/2341">#2341</a>)</li>
+<li>Support for cert_pem and key_pem with ssl_bind DSL (<a href="https://github-redirect.dependabot.com/puma/puma/issues/2728">#2728</a>)</li>
+</ul>
+</li>
+<li>
+<p>Bugfixes</p>
+<ul>
+<li>Keep thread names under 15 characters, prevents breakage on some OSes (<a href="https://github-redirect.dependabot.com/puma/puma/issues/2733">#2733</a>)</li>
+<li>Fix two 'old-style-definition' compile warning (<a href="https://github-redirect.dependabot.com/puma/puma/issues/2807">#2807</a>, <a href="https://github-redirect.dependabot.com/puma/puma/issues/2806">#2806</a>)</li>
+<li>Log environment correctly using option value (<a href="https://github-redirect.dependabot.com/puma/puma/issues/2799">#2799</a>)</li>
+<li>Fix warning from Ruby master (will be 3.2.0) (<a href="https://github-redirect.dependabot.com/puma/puma/issues/2785">#2785</a>)</li>
+<li>extconf.rb - fix openssl with old Windows builds (<a href="https://github-redirect.dependabot.com/puma/puma/issues/2757">#2757</a>)</li>
+<li>server.rb - rescue handling (<code>Errno::EBADF</code>) for <code>@notify.close</code> (<a href="https://github-redirect.dependabot.com/puma/puma/issues/2745">#2745</a>)</li>
+</ul>
+</li>
+<li>
+<p>Refactor</p>
+<ul>
+<li>server.rb - refactor code using <a href="https://github.com/options"><code>@​options</code></a>[:remote_address] (<a href="https://github-redirect.dependabot.com/puma/puma/issues/2742">#2742</a>)</li>
+<li>[jruby] a couple refactorings - avoid copy-ing bytes (<a href="https://github-redirect.dependabot.com/puma/puma/issues/2730">#2730</a>)</li>
+</ul>
+</li>
+</ul>
+<h2>5.5.2 / 2021-10-12</h2>
+<ul>
+<li>Bugfixes
+<ul>
+<li>Allow UTF-8 in HTTP header values</li>
+</ul>
+</li>
+</ul>
+<h2>5.5.1 / 2021-10-12</h2>
+<ul>
+<li>
+<p>Feature (added as mistake - we don't normally do this on bugfix releases, sorry!)</p>
+<ul>
+<li>Allow setting APP_ENV in preference to RACK_ENV or RAILS_ENV (<a href="https://github-redirect.dependabot.com/puma/puma/issues/2702">#2702</a>)</li>
+</ul>
+</li>
+<li>
+<p>Security</p>
+<ul>
+<li>Do not allow LF as a line ending in a header (CVE-2021-41136)</li>
+</ul>
+</li>
+</ul>
+<h2>5.5.0 / 2021-09-19</h2>
+<ul>
+<li>Features
+<ul>
+<li>Automatic SSL certificate provisioning for localhost, via localhost gem (<a href="https://github-redirect.dependabot.com/puma/puma/issues/2610">#2610</a>, <a href="https://github-redirect.dependabot.com/puma/puma/issues/2257">#2257</a>)</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+</blockquote>
+<p>... (truncated)</p>
+</details>
+<details>
+<summary>Commits</summary>
+<ul>
+<li><a href="https://github.com/puma/puma/commit/c6340d1fabcd02c4cc5c1d4effaeba393dedb1a8"><code>c6340d1</code></a> 5.6.2 (<a href="https://github-redirect.dependabot.com/puma/puma/issues/2821">#2821</a>)</li>
+<li><a href="https://github.com/puma/puma/commit/e0753de846a1651401343687a22bfd52c97bc72a"><code>e0753de</code></a> 2.6.1</li>
+<li><a href="https://github.com/puma/puma/commit/7008a61ac9f87f71f4c688a6ab5d3cf2b6c8151a"><code>7008a61</code></a> Revert &quot;Always send lowlevel_error response to client (<a href="https://github-redirect.dependabot.com/puma/puma/issues/2731">#2731</a>)&quot; (<a href="https://github-redirect.dependabot.com/puma/puma/issues/2809">#2809</a>)</li>
+<li><a href="https://github.com/puma/puma/commit/61ebbbe8ec5a7937abb48f62ed0e733c2f634e6f"><code>61ebbbe</code></a> 5.6.0</li>
+<li><a href="https://github.com/puma/puma/commit/d20915d6f2a5be8d2d10bf2d88c197be48438e9b"><code>d20915d</code></a> Fix two 'old-style-definition' compile warning (<a href="https://github-redirect.dependabot.com/puma/puma/issues/2807">#2807</a>)</li>
+<li><a href="https://github.com/puma/puma/commit/930e5b422d40e56241853188af0043ac619a9bd5"><code>930e5b4</code></a> Fix typo in CONTRIBUTING (<a href="https://github-redirect.dependabot.com/puma/puma/issues/2805">#2805</a>)</li>
+<li><a href="https://github.com/puma/puma/commit/c38d61cf67cc73af928cb7f1fe77860817ccc997"><code>c38d61c</code></a> CONTRIBUTING: file limits</li>
+<li><a href="https://github.com/puma/puma/commit/aa732fda737033190dae25f430409a4a101b6bd3"><code>aa732fd</code></a> Updates for OpenSSL 3 (<a href="https://github-redirect.dependabot.com/puma/puma/issues/2800">#2800</a>)</li>
+<li><a href="https://github.com/puma/puma/commit/ca2128f1790f6c4158552c6f2b66f579574fa2f6"><code>ca2128f</code></a> Log environment using option value (<a href="https://github-redirect.dependabot.com/puma/puma/issues/2799">#2799</a>)</li>
+<li><a href="https://github.com/puma/puma/commit/3f3c2f6eb0228cf929d44c68131bfc3bc3d028a9"><code>3f3c2f6</code></a> Adds a --silent option to the CLI (<a href="https://github-redirect.dependabot.com/puma/puma/issues/2803">#2803</a>)</li>
+<li>Additional commits viewable in <a href="https://github.com/puma/puma/compare/v5.3.2...v5.6.2">compare view</a></li>
+</ul>
+</details>
+<br />
+
+
+[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=puma&package-manager=bundler&previous-version=5.3.2&new-version=5.6.2)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+
+Dependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.
+
+[//]: # (dependabot-automerge-start)
+[//]: # (dependabot-automerge-end)
+
+---
+
+<details>
+<summary>Dependabot commands and options</summary>
+<br />
+
+You can trigger Dependabot actions by commenting on this PR:
+- `@dependabot rebase` will rebase this PR
+- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it
+- `@dependabot merge` will merge this PR after your CI passes on it
+- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it
+- `@dependabot cancel merge` will cancel a previously requested merge and block automerging
+- `@dependabot reopen` will reopen this PR if it is closed
+- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually
+- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot use these labels` will set the current labels as the default for future PRs for this repo and language
+- `@dependabot use these reviewers` will set the current reviewers as the default for future PRs for this repo and language
+- `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language
+- `@dependabot use this milestone` will set the current milestone as the default for future PRs for this repo and language
+
+You can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/adyen-examples/adyen-rails-online-payments/network/alerts).
+
+</details>, number=12, title=Bump puma from 5.3.2 to 5.6.2, user=User(login=dependabot[bot], url=https://api.github.com/users/dependabot%5Bbot%5D, type=Bot), state=open, created_at=2022-02-11T21:52:16Z)]
+
+[Issues(repository=adyen-react-online-payments, html_url=https://github.com/adyen-examples/adyen-react-online-payments/pull/17, body=Bumps [url-parse](https://github.com/unshiftio/url-parse) from 1.5.3 to 1.5.10.
+<details>
+<summary>Commits</summary>
+<ul>
+<li><a href="https://github.com/unshiftio/url-parse/commit/8cd4c6c6435c1ea32243ec20c9cfe535251ec524"><code>8cd4c6c</code></a> 1.5.10</li>
+<li><a href="https://github.com/unshiftio/url-parse/commit/ce7a01f2e10738b17812f57c7b6b5de4ea4c0298"><code>ce7a01f</code></a> [fix] Improve handling of empty port</li>
+<li><a href="https://github.com/unshiftio/url-parse/commit/00714900ea1e8ba0a1f87b9f8399001e47f060ec"><code>0071490</code></a> [doc] Update JSDoc comment</li>
+<li><a href="https://github.com/unshiftio/url-parse/commit/a7044e3e8bb2308ac0f74264d01951aeaca0d66f"><code>a7044e3</code></a> [minor] Use more descriptive variable name</li>
+<li><a href="https://github.com/unshiftio/url-parse/commit/d547792414a414b2f341a805141beafee728addf"><code>d547792</code></a> [security] Add credits for CVE-2022-0691</li>
+<li><a href="https://github.com/unshiftio/url-parse/commit/ad23357ad5fd9a6b011d049466e9ecff723e52b8"><code>ad23357</code></a> 1.5.9</li>
+<li><a href="https://github.com/unshiftio/url-parse/commit/0e3fb542d60ddbf6933f22eb9b1e06e25eaa5b63"><code>0e3fb54</code></a> [fix] Strip all control characters from the beginning of the URL</li>
+<li><a href="https://github.com/unshiftio/url-parse/commit/61864a8eccff714a45d23db85a814e3c6ee0baba"><code>61864a8</code></a> [security] Add credits for CVE-2022-0686</li>
+<li><a href="https://github.com/unshiftio/url-parse/commit/bb0104d6439cf7c2662afbd9411e0772a9639664"><code>bb0104d</code></a> 1.5.8</li>
+<li><a href="https://github.com/unshiftio/url-parse/commit/d5c64791ef496ca5459ae7f2176a31ea53b127e5"><code>d5c6479</code></a> [fix] Handle the case where the port is specified but empty</li>
+<li>Additional commits viewable in <a href="https://github.com/unshiftio/url-parse/compare/1.5.3...1.5.10">compare view</a></li>
+</ul>
+</details>
+<br />
+
+
+[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=url-parse&package-manager=npm_and_yarn&previous-version=1.5.3&new-version=1.5.10)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+
+Dependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.
+
+[//]: # (dependabot-automerge-start)
+[//]: # (dependabot-automerge-end)
+
+---
+
+<details>
+<summary>Dependabot commands and options</summary>
+<br />
+
+You can trigger Dependabot actions by commenting on this PR:
+- `@dependabot rebase` will rebase this PR
+- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it
+- `@dependabot merge` will merge this PR after your CI passes on it
+- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it
+- `@dependabot cancel merge` will cancel a previously requested merge and block automerging
+- `@dependabot reopen` will reopen this PR if it is closed
+- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually
+- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot use these labels` will set the current labels as the default for future PRs for this repo and language
+- `@dependabot use these reviewers` will set the current reviewers as the default for future PRs for this repo and language
+- `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language
+- `@dependabot use this milestone` will set the current milestone as the default for future PRs for this repo and language
+
+You can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/adyen-examples/adyen-react-online-payments/network/alerts).
+
+</details>, number=17, title=Bump url-parse from 1.5.3 to 1.5.10, user=User(login=dependabot[bot], url=https://api.github.com/users/dependabot%5Bbot%5D, type=Bot), state=open, created_at=2022-02-27T21:44:03Z), Issues(repository=adyen-react-online-payments, html_url=https://github.com/adyen-examples/adyen-react-online-payments/pull/15, body=Bumps [follow-redirects](https://github.com/follow-redirects/follow-redirects) from 1.14.5 to 1.14.8.
+<details>
+<summary>Commits</summary>
+<ul>
+<li><a href="https://github.com/follow-redirects/follow-redirects/commit/3d81dc3237b4ffe8b722bb3d1c70a7866657166e"><code>3d81dc3</code></a> Release version 1.14.8 of the npm package.</li>
+<li><a href="https://github.com/follow-redirects/follow-redirects/commit/62e546a99c07c3ee5e4e0718c84a6ca127c5c445"><code>62e546a</code></a> Drop confidential headers across schemes.</li>
+<li><a href="https://github.com/follow-redirects/follow-redirects/commit/2ede36d7c60d3acdcd324dcd99a9dbd52e4fb3a6"><code>2ede36d</code></a> Release version 1.14.7 of the npm package.</li>
+<li><a href="https://github.com/follow-redirects/follow-redirects/commit/8b347cbcef7c7b72a6e9be20f5710c17d6163c22"><code>8b347cb</code></a> Drop Cookie header across domains.</li>
+<li><a href="https://github.com/follow-redirects/follow-redirects/commit/6f5029ae1a0fdab4dc25f6379a5ee303c2319070"><code>6f5029a</code></a> Release version 1.14.6 of the npm package.</li>
+<li><a href="https://github.com/follow-redirects/follow-redirects/commit/af706bee57de954414c0bde0a9f33e62beea3e52"><code>af706be</code></a> Ignore null headers.</li>
+<li>See full diff in <a href="https://github.com/follow-redirects/follow-redirects/compare/v1.14.5...v1.14.8">compare view</a></li>
+</ul>
+</details>
+<br />
+
+
+[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=follow-redirects&package-manager=npm_and_yarn&previous-version=1.14.5&new-version=1.14.8)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+
+Dependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.
+
+[//]: # (dependabot-automerge-start)
+[//]: # (dependabot-automerge-end)
+
+---
+
+<details>
+<summary>Dependabot commands and options</summary>
+<br />
+
+You can trigger Dependabot actions by commenting on this PR:
+- `@dependabot rebase` will rebase this PR
+- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it
+- `@dependabot merge` will merge this PR after your CI passes on it
+- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it
+- `@dependabot cancel merge` will cancel a previously requested merge and block automerging
+- `@dependabot reopen` will reopen this PR if it is closed
+- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually
+- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot use these labels` will set the current labels as the default for future PRs for this repo and language
+- `@dependabot use these reviewers` will set the current reviewers as the default for future PRs for this repo and language
+- `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language
+- `@dependabot use this milestone` will set the current milestone as the default for future PRs for this repo and language
+
+You can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/adyen-examples/adyen-react-online-payments/network/alerts).
+
+</details>, number=15, title=Bump follow-redirects from 1.14.5 to 1.14.8, user=User(login=dependabot[bot], url=https://api.github.com/users/dependabot%5Bbot%5D, type=Bot), state=open, created_at=2022-02-14T21:59:58Z), Issues(repository=adyen-react-online-payments, html_url=https://github.com/adyen-examples/adyen-react-online-payments/pull/14, body=Bumps [nanoid](https://github.com/ai/nanoid) from 3.1.30 to 3.2.0.
+<details>
+<summary>Changelog</summary>
+<p><em>Sourced from <a href="https://github.com/ai/nanoid/blob/main/CHANGELOG.md">nanoid's changelog</a>.</em></p>
+<blockquote>
+<h1>Change Log</h1>
+<p>This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p>
+<h2>3.2</h2>
+<ul>
+<li>Added <code>--size</code> and <code>--alphabet</code> arguments to binary (by Vitaly Baev).</li>
+</ul>
+<h2>3.1.32</h2>
+<ul>
+<li>Reduced <code>async</code> exports size (by Artyom Arutyunyan).</li>
+<li>Moved from Jest to uvu (by Vitaly Baev).</li>
+</ul>
+<h2>3.1.31</h2>
+<ul>
+<li>Fixed collision vulnerability on object in <code>size</code> (by Artyom Arutyunyan).</li>
+</ul>
+</blockquote>
+</details>
+<details>
+<summary>Commits</summary>
+<ul>
+<li><a href="https://github.com/ai/nanoid/commit/23b136929a6d58f32e31b269534a3ce3f680a086"><code>23b1369</code></a> Release 3.2 version</li>
+<li><a href="https://github.com/ai/nanoid/commit/967788efce880960512f969a56f8f22f3fc20bae"><code>967788e</code></a> Remove TS test tools</li>
+<li><a href="https://github.com/ai/nanoid/commit/27eaa90cd207a7782bbcf17343092ae87dd62164"><code>27eaa90</code></a> Simplify new binary tool</li>
+<li><a href="https://github.com/ai/nanoid/commit/a9d91239931dc77506381874826d297aee71d6ef"><code>a9d9123</code></a> Update dependencies</li>
+<li><a href="https://github.com/ai/nanoid/commit/32b9bdaab1fbc28576b17de8516164ce0360f292"><code>32b9bda</code></a> Allows passing size or custom alphabet via cli as args (<a href="https://github-redirect.dependabot.com/ai/nanoid/issues/334">#334</a>)</li>
+<li><a href="https://github.com/ai/nanoid/commit/246d5f87b6b34e23b5e401bdf3da1f80c810ac4c"><code>246d5f8</code></a> Update vite</li>
+<li><a href="https://github.com/ai/nanoid/commit/afdf9c92b41427f35476fbe14b5af5d73dd7fbdb"><code>afdf9c9</code></a> doc: Fixed Typo (<a href="https://github-redirect.dependabot.com/ai/nanoid/issues/335">#335</a>)</li>
+<li><a href="https://github.com/ai/nanoid/commit/90a446fef3ecaac78e5af2ea01025c4f40182e2b"><code>90a446f</code></a> Update benchmark results</li>
+<li><a href="https://github.com/ai/nanoid/commit/8ba2319b579895cc1f9060b9946a44852f97c509"><code>8ba2319</code></a> bench: add <code>@​napi-rs/uuid</code> v4 (<a href="https://github-redirect.dependabot.com/ai/nanoid/issues/333">#333</a>)</li>
+<li><a href="https://github.com/ai/nanoid/commit/f4257780ece488734a65c176e80c2fd8ab6aab8e"><code>f425778</code></a> Release 3.1.32 version</li>
+<li>Additional commits viewable in <a href="https://github.com/ai/nanoid/compare/3.1.30...3.2.0">compare view</a></li>
+</ul>
+</details>
+<br />
+
+
+[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=nanoid&package-manager=npm_and_yarn&previous-version=3.1.30&new-version=3.2.0)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+
+Dependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.
+
+[//]: # (dependabot-automerge-start)
+[//]: # (dependabot-automerge-end)
+
+---
+
+<details>
+<summary>Dependabot commands and options</summary>
+<br />
+
+You can trigger Dependabot actions by commenting on this PR:
+- `@dependabot rebase` will rebase this PR
+- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it
+- `@dependabot merge` will merge this PR after your CI passes on it
+- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it
+- `@dependabot cancel merge` will cancel a previously requested merge and block automerging
+- `@dependabot reopen` will reopen this PR if it is closed
+- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually
+- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot use these labels` will set the current labels as the default for future PRs for this repo and language
+- `@dependabot use these reviewers` will set the current reviewers as the default for future PRs for this repo and language
+- `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language
+- `@dependabot use this milestone` will set the current milestone as the default for future PRs for this repo and language
+
+You can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/adyen-examples/adyen-react-online-payments/network/alerts).
+
+</details>, number=14, title=Bump nanoid from 3.1.30 to 3.2.0, user=User(login=dependabot[bot], url=https://api.github.com/users/dependabot%5Bbot%5D, type=Bot), state=open, created_at=2022-01-22T09:56:13Z), Issues(repository=adyen-react-online-payments, html_url=https://github.com/adyen-examples/adyen-react-online-payments/issues/12, body=I'm implementing a react storefront that utilizes @adyen/adyen-web.
+I faced few issues during the implementation:
+1. import '@adyen/adyen-web/dist/adyen.css' wasn't compiling which I got resolved by adding style-loader and css-loader to webpack config file
+2. Another issue which is blocking me is smart buttons not showing and I'm not seeing any clues on why they won't.
+![image](https://user-images.githubusercontent.com/19668725/143950706-d0bcd9a2-ab26-434b-bd90-882d4fe7d3b3.png)
+![image](https://user-images.githubusercontent.com/19668725/143950737-ceca6771-108b-4419-8f27-8a5a3864b23d.png)
+![image](https://user-images.githubusercontent.com/19668725/143950754-bb013d08-07ed-43e7-8ff2-000930b485b8.png)
+
+A. I checked for console errors
+B. I tried multiple @adyen/adyen-web versions between 5.2.0 and 5.3.1, no luck
+C. Read through the updated 5.x.x documentation 20 times :)
+D. Built and deployed your repository and everything seems to work. My guess it's a webpack issue.
+I would really appreciate it if someone can point me in the right direction and if I'm missing something obvious
+
+Deployed storefront (with the issue described above):
+https://xcpwaretail-development.mobify-storefront.com/, number=12, title=Smart buttons (PayPal and Google Pay) are not loading, user=User(login=sghata, url=https://api.github.com/users/sghata, type=User), state=open, created_at=2021-11-29T22:19:55Z)]
+
+[]
+
+[Issues(repository=adyen-java-react-ecommerce-example, html_url=https://github.com/adyen-examples/adyen-java-react-ecommerce-example/pull/19, body=Bumps [url-parse](https://github.com/unshiftio/url-parse) from 1.5.1 to 1.5.10.
+<details>
+<summary>Commits</summary>
+<ul>
+<li><a href="https://github.com/unshiftio/url-parse/commit/8cd4c6c6435c1ea32243ec20c9cfe535251ec524"><code>8cd4c6c</code></a> 1.5.10</li>
+<li><a href="https://github.com/unshiftio/url-parse/commit/ce7a01f2e10738b17812f57c7b6b5de4ea4c0298"><code>ce7a01f</code></a> [fix] Improve handling of empty port</li>
+<li><a href="https://github.com/unshiftio/url-parse/commit/00714900ea1e8ba0a1f87b9f8399001e47f060ec"><code>0071490</code></a> [doc] Update JSDoc comment</li>
+<li><a href="https://github.com/unshiftio/url-parse/commit/a7044e3e8bb2308ac0f74264d01951aeaca0d66f"><code>a7044e3</code></a> [minor] Use more descriptive variable name</li>
+<li><a href="https://github.com/unshiftio/url-parse/commit/d547792414a414b2f341a805141beafee728addf"><code>d547792</code></a> [security] Add credits for CVE-2022-0691</li>
+<li><a href="https://github.com/unshiftio/url-parse/commit/ad23357ad5fd9a6b011d049466e9ecff723e52b8"><code>ad23357</code></a> 1.5.9</li>
+<li><a href="https://github.com/unshiftio/url-parse/commit/0e3fb542d60ddbf6933f22eb9b1e06e25eaa5b63"><code>0e3fb54</code></a> [fix] Strip all control characters from the beginning of the URL</li>
+<li><a href="https://github.com/unshiftio/url-parse/commit/61864a8eccff714a45d23db85a814e3c6ee0baba"><code>61864a8</code></a> [security] Add credits for CVE-2022-0686</li>
+<li><a href="https://github.com/unshiftio/url-parse/commit/bb0104d6439cf7c2662afbd9411e0772a9639664"><code>bb0104d</code></a> 1.5.8</li>
+<li><a href="https://github.com/unshiftio/url-parse/commit/d5c64791ef496ca5459ae7f2176a31ea53b127e5"><code>d5c6479</code></a> [fix] Handle the case where the port is specified but empty</li>
+<li>Additional commits viewable in <a href="https://github.com/unshiftio/url-parse/compare/1.5.1...1.5.10">compare view</a></li>
+</ul>
+</details>
+<br />
+
+
+[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=url-parse&package-manager=npm_and_yarn&previous-version=1.5.1&new-version=1.5.10)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+
+Dependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.
+
+[//]: # (dependabot-automerge-start)
+[//]: # (dependabot-automerge-end)
+
+---
+
+<details>
+<summary>Dependabot commands and options</summary>
+<br />
+
+You can trigger Dependabot actions by commenting on this PR:
+- `@dependabot rebase` will rebase this PR
+- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it
+- `@dependabot merge` will merge this PR after your CI passes on it
+- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it
+- `@dependabot cancel merge` will cancel a previously requested merge and block automerging
+- `@dependabot reopen` will reopen this PR if it is closed
+- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually
+- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot use these labels` will set the current labels as the default for future PRs for this repo and language
+- `@dependabot use these reviewers` will set the current reviewers as the default for future PRs for this repo and language
+- `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language
+- `@dependabot use this milestone` will set the current milestone as the default for future PRs for this repo and language
+
+You can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/adyen-examples/adyen-java-react-ecommerce-example/network/alerts).
+
+</details>, number=19, title=build(deps): bump url-parse from 1.5.1 to 1.5.10, user=User(login=dependabot[bot], url=https://api.github.com/users/dependabot%5Bbot%5D, type=Bot), state=open, created_at=2022-02-27T23:29:37Z), Issues(repository=adyen-java-react-ecommerce-example, html_url=https://github.com/adyen-examples/adyen-java-react-ecommerce-example/pull/17, body=Bumps [follow-redirects](https://github.com/follow-redirects/follow-redirects) from 1.13.3 to 1.14.8.
+<details>
+<summary>Commits</summary>
+<ul>
+<li><a href="https://github.com/follow-redirects/follow-redirects/commit/3d81dc3237b4ffe8b722bb3d1c70a7866657166e"><code>3d81dc3</code></a> Release version 1.14.8 of the npm package.</li>
+<li><a href="https://github.com/follow-redirects/follow-redirects/commit/62e546a99c07c3ee5e4e0718c84a6ca127c5c445"><code>62e546a</code></a> Drop confidential headers across schemes.</li>
+<li><a href="https://github.com/follow-redirects/follow-redirects/commit/2ede36d7c60d3acdcd324dcd99a9dbd52e4fb3a6"><code>2ede36d</code></a> Release version 1.14.7 of the npm package.</li>
+<li><a href="https://github.com/follow-redirects/follow-redirects/commit/8b347cbcef7c7b72a6e9be20f5710c17d6163c22"><code>8b347cb</code></a> Drop Cookie header across domains.</li>
+<li><a href="https://github.com/follow-redirects/follow-redirects/commit/6f5029ae1a0fdab4dc25f6379a5ee303c2319070"><code>6f5029a</code></a> Release version 1.14.6 of the npm package.</li>
+<li><a href="https://github.com/follow-redirects/follow-redirects/commit/af706bee57de954414c0bde0a9f33e62beea3e52"><code>af706be</code></a> Ignore null headers.</li>
+<li><a href="https://github.com/follow-redirects/follow-redirects/commit/d01ab7a5c5df3617c7a40a03de7af6427fdfac55"><code>d01ab7a</code></a> Release version 1.14.5 of the npm package.</li>
+<li><a href="https://github.com/follow-redirects/follow-redirects/commit/40052ea8aa13559becee5795715c1d45b1f0eb76"><code>40052ea</code></a> Make compatible with Node 17.</li>
+<li><a href="https://github.com/follow-redirects/follow-redirects/commit/86f7572f9365dadc39f85916259b58973819617f"><code>86f7572</code></a> Fix: clear internal timer on request abort to avoid leakage</li>
+<li><a href="https://github.com/follow-redirects/follow-redirects/commit/2e1eaf0218c5315a2ab27f53964d0535d4dafb51"><code>2e1eaf0</code></a> Keep Authorization header on subdomain redirects.</li>
+<li>Additional commits viewable in <a href="https://github.com/follow-redirects/follow-redirects/compare/v1.13.3...v1.14.8">compare view</a></li>
+</ul>
+</details>
+<br />
+
+
+[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=follow-redirects&package-manager=npm_and_yarn&previous-version=1.13.3&new-version=1.14.8)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+
+Dependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.
+
+[//]: # (dependabot-automerge-start)
+[//]: # (dependabot-automerge-end)
+
+---
+
+<details>
+<summary>Dependabot commands and options</summary>
+<br />
+
+You can trigger Dependabot actions by commenting on this PR:
+- `@dependabot rebase` will rebase this PR
+- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it
+- `@dependabot merge` will merge this PR after your CI passes on it
+- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it
+- `@dependabot cancel merge` will cancel a previously requested merge and block automerging
+- `@dependabot reopen` will reopen this PR if it is closed
+- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually
+- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot use these labels` will set the current labels as the default for future PRs for this repo and language
+- `@dependabot use these reviewers` will set the current reviewers as the default for future PRs for this repo and language
+- `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language
+- `@dependabot use this milestone` will set the current milestone as the default for future PRs for this repo and language
+
+You can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/adyen-examples/adyen-java-react-ecommerce-example/network/alerts).
+
+</details>, number=17, title=build(deps): bump follow-redirects from 1.13.3 to 1.14.8, user=User(login=dependabot[bot], url=https://api.github.com/users/dependabot%5Bbot%5D, type=Bot), state=open, created_at=2022-02-15T01:12:13Z), Issues(repository=adyen-java-react-ecommerce-example, html_url=https://github.com/adyen-examples/adyen-java-react-ecommerce-example/pull/16, body=Bumps [ajv](https://github.com/ajv-validator/ajv) from 6.12.2 to 6.12.6.
+<details>
+<summary>Release notes</summary>
+<p><em>Sourced from <a href="https://github.com/ajv-validator/ajv/releases">ajv's releases</a>.</em></p>
+<blockquote>
+<h2>v6.12.6</h2>
+<p>Fix performance issue of &quot;url&quot; format.</p>
+<h2>v6.12.5</h2>
+<p>Fix uri scheme validation (<a href="https://github.com/ChALkeR"><code>@​ChALkeR</code></a>).
+Fix boolean schemas with strictKeywords option (<a href="https://github-redirect.dependabot.com/ajv-validator/ajv/issues/1270">#1270</a>)</p>
+<h2>v6.12.4</h2>
+<p>Fix: coercion of one-item arrays to scalar that should fail validation (<a href="https://runkit.com/esp/5f3672ba2f6642001ae27411">failing example</a>).</p>
+<h2>v6.12.3</h2>
+<p>Pass schema object to processCode function
+Option for strictNumbers (<a href="https://github.com/issacgerges"><code>@​issacgerges</code></a>, <a href="https://github-redirect.dependabot.com/ajv-validator/ajv/issues/1128">#1128</a>)
+Fixed vulnerability related to untrusted schemas (<a href="https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=CVE-2020-15366">CVE-2020-15366</a>)</p>
+</blockquote>
+</details>
+<details>
+<summary>Commits</summary>
+<ul>
+<li><a href="https://github.com/ajv-validator/ajv/commit/fe591439f34e24030f69df9eb8d91e6d037a3af7"><code>fe59143</code></a> 6.12.6</li>
+<li><a href="https://github.com/ajv-validator/ajv/commit/d580d3e8ac6a467670d68d86e3a39fd661ac8c23"><code>d580d3e</code></a> Merge pull request <a href="https://github-redirect.dependabot.com/ajv-validator/ajv/issues/1298">#1298</a> from ajv-validator/fix-url</li>
+<li><a href="https://github.com/ajv-validator/ajv/commit/fd363896a8d6c5697b5da41f4d9a400a84efaf8e"><code>fd36389</code></a> fix: regular expression for &quot;url&quot; format</li>
+<li><a href="https://github.com/ajv-validator/ajv/commit/490e34c4846064db5c962a77087e17078954c2f6"><code>490e34c</code></a> docs: link to v7-beta branch</li>
+<li><a href="https://github.com/ajv-validator/ajv/commit/9cd93a1bdbdefd5a7ba3db5e123d20c84d1d1d0e"><code>9cd93a1</code></a> docs: note about v7 in readme</li>
+<li><a href="https://github.com/ajv-validator/ajv/commit/877d286e7f145b1b2127da66c6800b071533f28f"><code>877d286</code></a> Merge pull request <a href="https://github-redirect.dependabot.com/ajv-validator/ajv/issues/1262">#1262</a> from b4h0-c4t/refactor-opt-object-type</li>
+<li><a href="https://github.com/ajv-validator/ajv/commit/f1c8e45b9cdff918be28becf03bf0b339321c398"><code>f1c8e45</code></a> 6.12.5</li>
+<li><a href="https://github.com/ajv-validator/ajv/commit/764035e201d7733b8d700d4a04dd079fef9f4d30"><code>764035e</code></a> Merge branch 'ChALkeR-chalker/fix-comma'</li>
+<li><a href="https://github.com/ajv-validator/ajv/commit/37981602ce6d43313ae106644b372b021626a8af"><code>3798160</code></a> Merge branch 'chalker/fix-comma' of git://github.com/ChALkeR/ajv into ChALkeR...</li>
+<li><a href="https://github.com/ajv-validator/ajv/commit/a3c7ebab222e4cce07b5e30ebcbb809da7f934e8"><code>a3c7eba</code></a> Merge branch 'refactor-opt-object-type' of github.com:b4h0-c4t/ajv into refac...</li>
+<li>Additional commits viewable in <a href="https://github.com/ajv-validator/ajv/compare/v6.12.2...v6.12.6">compare view</a></li>
+</ul>
+</details>
+<br />
+
+
+[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=ajv&package-manager=npm_and_yarn&previous-version=6.12.2&new-version=6.12.6)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+
+Dependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.
+
+[//]: # (dependabot-automerge-start)
+[//]: # (dependabot-automerge-end)
+
+---
+
+<details>
+<summary>Dependabot commands and options</summary>
+<br />
+
+You can trigger Dependabot actions by commenting on this PR:
+- `@dependabot rebase` will rebase this PR
+- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it
+- `@dependabot merge` will merge this PR after your CI passes on it
+- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it
+- `@dependabot cancel merge` will cancel a previously requested merge and block automerging
+- `@dependabot reopen` will reopen this PR if it is closed
+- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually
+- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot use these labels` will set the current labels as the default for future PRs for this repo and language
+- `@dependabot use these reviewers` will set the current reviewers as the default for future PRs for this repo and language
+- `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language
+- `@dependabot use this milestone` will set the current milestone as the default for future PRs for this repo and language
+
+You can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/adyen-examples/adyen-java-react-ecommerce-example/network/alerts).
+
+</details>, number=16, title=build(deps): bump ajv from 6.12.2 to 6.12.6, user=User(login=dependabot[bot], url=https://api.github.com/users/dependabot%5Bbot%5D, type=Bot), state=open, created_at=2022-02-14T01:36:07Z), Issues(repository=adyen-java-react-ecommerce-example, html_url=https://github.com/adyen-examples/adyen-java-react-ecommerce-example/pull/15, body=Bumps [handlebars](https://github.com/wycats/handlebars.js) from 4.7.3 to 4.7.7.
+<details>
+<summary>Changelog</summary>
+<p><em>Sourced from <a href="https://github.com/handlebars-lang/handlebars.js/blob/master/release-notes.md">handlebars's changelog</a>.</em></p>
+<blockquote>
+<h2>v4.7.7 - February 15th, 2021</h2>
+<ul>
+<li>fix weird error in integration tests - eb860c0</li>
+<li>fix: check prototype property access in strict-mode (<a href="https://github-redirect.dependabot.com/wycats/handlebars.js/issues/1736">#1736</a>) - b6d3de7</li>
+<li>fix: escape property names in compat mode (<a href="https://github-redirect.dependabot.com/wycats/handlebars.js/issues/1736">#1736</a>) - f058970</li>
+<li>refactor: In spec tests, use expectTemplate over equals and shouldThrow (<a href="https://github-redirect.dependabot.com/wycats/handlebars.js/issues/1683">#1683</a>) - 77825f8</li>
+<li>chore: start testing on Node.js 12 and 13 - 3789a30</li>
+</ul>
+<p>(POSSIBLY) BREAKING CHANGES:</p>
+<ul>
+<li>the changes from version <a href="https://github.com/handlebars-lang/handlebars.js/blob/master/release-notes.md#v460---january-8th-2020">4.6.0</a> now also apply
+in when using the compile-option &quot;strict: true&quot;. Access to prototype properties is forbidden completely by default, specific properties or methods
+can be allowed via runtime-options. See <a href="https://github-redirect.dependabot.com/wycats/handlebars.js/issues/1633">#1633</a> for details. If you are using Handlebars as documented, you should not be accessing prototype properties
+from your template anyway, so the changes should not be a problem for you. Only the use of undocumented features can break your build.</li>
+</ul>
+<p>That is why we only bump the patch version despite mentioning breaking changes.</p>
+<p><a href="https://github.com/handlebars-lang/handlebars.js/compare/v4.7.6...v4.7.7">Commits</a></p>
+<h2>v4.7.6 - April 3rd, 2020</h2>
+<p>Chore/Housekeeping:</p>
+<ul>
+<li><a href="https://github-redirect.dependabot.com/handlebars-lang/handlebars.js/issues/1672">#1672</a> - Switch cmd parser to latest minimist (<a href="https://api.github.com/users/dougwilson"><code>@​dougwilson</code></a></li>
+</ul>
+<p>Compatibility notes:</p>
+<ul>
+<li>Restored Node.js compatibility</li>
+</ul>
+<p><a href="https://github.com/handlebars-lang/handlebars.js/compare/v4.7.5...v4.7.6">Commits</a></p>
+<h2>v4.7.5 - April 2nd, 2020</h2>
+<p>Chore/Housekeeping:</p>
+<ul>
+<li><del>Node.js version support has been changed to v6+</del> Reverted in 4.7.6</li>
+</ul>
+<p>Compatibility notes:</p>
+<ul>
+<li><del>Node.js &lt; v6 is no longer supported</del> Reverted in 4.7.6</li>
+</ul>
+<p><a href="https://github.com/handlebars-lang/handlebars.js/compare/v4.7.4...v4.7.5">Commits</a></p>
+<h2>v4.7.4 - April 1st, 2020</h2>
+<p>Chore/Housekeeping:</p>
+<ul>
+<li><a href="https://github-redirect.dependabot.com/handlebars-lang/handlebars.js/issues/1666">#1666</a> - Replaced minimist with yargs for handlebars CLI (<a href="https://api.github.com/users/aorinevo"><code>@​aorinevo</code></a>, <a href="https://api.github.com/users/AviVahl"><code>@​AviVahl</code></a> &amp; <a href="https://api.github.com/users/fabb"><code>@​fabb</code></a>)</li>
+</ul>
+<p>Compatibility notes:</p>
+<!-- raw HTML omitted -->
+</blockquote>
+<p>... (truncated)</p>
+</details>
+<details>
+<summary>Commits</summary>
+<ul>
+<li><a href="https://github.com/handlebars-lang/handlebars.js/commit/a9a8e403213583ca90cb7c872d3a22796c37d961"><code>a9a8e40</code></a> v4.7.7</li>
+<li><a href="https://github.com/handlebars-lang/handlebars.js/commit/e66aed5b99c1b6c93564f37d627e34e5d60eb76e"><code>e66aed5</code></a> Update release notes</li>
+<li><a href="https://github.com/handlebars-lang/handlebars.js/commit/7d4d170ce46a53084a41920c5c7387c131357989"><code>7d4d170</code></a> disable IE in Saucelabs tests</li>
+<li><a href="https://github.com/handlebars-lang/handlebars.js/commit/eb860c08998f8f506360d305d89e1f4b40f72a0a"><code>eb860c0</code></a> fix weird error in integration tests</li>
+<li><a href="https://github.com/handlebars-lang/handlebars.js/commit/b6d3de7123eebba603e321f04afdbae608e8fea8"><code>b6d3de7</code></a> fix: check prototype property access in strict-mode (<a href="https://github-redirect.dependabot.com/wycats/handlebars.js/issues/1736">#1736</a>)</li>
+<li><a href="https://github.com/handlebars-lang/handlebars.js/commit/f0589701698268578199be25285b2ebea1c1e427"><code>f058970</code></a> fix: escape property names in compat mode (<a href="https://github-redirect.dependabot.com/wycats/handlebars.js/issues/1736">#1736</a>)</li>
+<li><a href="https://github.com/handlebars-lang/handlebars.js/commit/77825f8d3522356feb8e4160fac16344104d192b"><code>77825f8</code></a> refator: In spec tests, use expectTemplate over equals and shouldThrow (<a href="https://github-redirect.dependabot.com/wycats/handlebars.js/issues/1683">#1683</a>)</li>
+<li><a href="https://github.com/handlebars-lang/handlebars.js/commit/3789a309554fd600caeae442f40881cf93eb3b54"><code>3789a30</code></a> chore: start testing on Node.js 12 and 13</li>
+<li><a href="https://github.com/handlebars-lang/handlebars.js/commit/e6ad93ea01bcde1f8ddaa4b4ebe572dd616abfaa"><code>e6ad93e</code></a> v4.7.6</li>
+<li><a href="https://github.com/handlebars-lang/handlebars.js/commit/2bf4fc6fd3ae3d8f076d628653f284d85faebeb4"><code>2bf4fc6</code></a> Update release notes</li>
+<li>Additional commits viewable in <a href="https://github.com/wycats/handlebars.js/compare/v4.7.3...v4.7.7">compare view</a></li>
+</ul>
+</details>
+<br />
+
+
+[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=handlebars&package-manager=npm_and_yarn&previous-version=4.7.3&new-version=4.7.7)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+
+Dependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.
+
+[//]: # (dependabot-automerge-start)
+[//]: # (dependabot-automerge-end)
+
+---
+
+<details>
+<summary>Dependabot commands and options</summary>
+<br />
+
+You can trigger Dependabot actions by commenting on this PR:
+- `@dependabot rebase` will rebase this PR
+- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it
+- `@dependabot merge` will merge this PR after your CI passes on it
+- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it
+- `@dependabot cancel merge` will cancel a previously requested merge and block automerging
+- `@dependabot reopen` will reopen this PR if it is closed
+- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually
+- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot use these labels` will set the current labels as the default for future PRs for this repo and language
+- `@dependabot use these reviewers` will set the current reviewers as the default for future PRs for this repo and language
+- `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language
+- `@dependabot use this milestone` will set the current milestone as the default for future PRs for this repo and language
+
+You can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/adyen-examples/adyen-java-react-ecommerce-example/network/alerts).
+
+</details>, number=15, title=build(deps): bump handlebars from 4.7.3 to 4.7.7, user=User(login=dependabot[bot], url=https://api.github.com/users/dependabot%5Bbot%5D, type=Bot), state=open, created_at=2022-02-11T15:22:40Z), Issues(repository=adyen-java-react-ecommerce-example, html_url=https://github.com/adyen-examples/adyen-java-react-ecommerce-example/pull/14, body=Bumps [nanoid](https://github.com/ai/nanoid) from 3.1.22 to 3.2.0.
+<details>
+<summary>Changelog</summary>
+<p><em>Sourced from <a href="https://github.com/ai/nanoid/blob/main/CHANGELOG.md">nanoid's changelog</a>.</em></p>
+<blockquote>
+<h1>Change Log</h1>
+<p>This project adheres to <a href="http://semver.org/">Semantic Versioning</a>.</p>
+<h2>3.2</h2>
+<ul>
+<li>Added <code>--size</code> and <code>--alphabet</code> arguments to binary (by Vitaly Baev).</li>
+</ul>
+<h2>3.1.32</h2>
+<ul>
+<li>Reduced <code>async</code> exports size (by Artyom Arutyunyan).</li>
+<li>Moved from Jest to uvu (by Vitaly Baev).</li>
+</ul>
+<h2>3.1.31</h2>
+<ul>
+<li>Fixed collision vulnerability on object in <code>size</code> (by Artyom Arutyunyan).</li>
+</ul>
+<h2>3.1.30</h2>
+<ul>
+<li>Reduced size for project with <code>brotli</code> compression (by Anton Khlynovskiy).</li>
+</ul>
+<h2>3.1.29</h2>
+<ul>
+<li>Reduced npm package size.</li>
+</ul>
+<h2>3.1.28</h2>
+<ul>
+<li>Reduced npm package size.</li>
+</ul>
+<h2>3.1.27</h2>
+<ul>
+<li>Cleaned <code>dependencies</code> from development tools.</li>
+</ul>
+<h2>3.1.26</h2>
+<ul>
+<li>Improved performance (by Eitan Har-Shoshanim).</li>
+<li>Reduced npm package size.</li>
+</ul>
+<h2>3.1.25</h2>
+<ul>
+<li>Fixed <code>browserify</code> support.</li>
+</ul>
+<h2>3.1.24</h2>
+<ul>
+<li>Fixed <code>browserify</code> support (by Artur Paikin).</li>
+</ul>
+<h2>3.1.23</h2>
+<ul>
+<li>Fixed <code>esbuild</code> support.</li>
+</ul>
+</blockquote>
+</details>
+<details>
+<summary>Commits</summary>
+<ul>
+<li><a href="https://github.com/ai/nanoid/commit/23b136929a6d58f32e31b269534a3ce3f680a086"><code>23b1369</code></a> Release 3.2 version</li>
+<li><a href="https://github.com/ai/nanoid/commit/967788efce880960512f969a56f8f22f3fc20bae"><code>967788e</code></a> Remove TS test tools</li>
+<li><a href="https://github.com/ai/nanoid/commit/27eaa90cd207a7782bbcf17343092ae87dd62164"><code>27eaa90</code></a> Simplify new binary tool</li>
+<li><a href="https://github.com/ai/nanoid/commit/a9d91239931dc77506381874826d297aee71d6ef"><code>a9d9123</code></a> Update dependencies</li>
+<li><a href="https://github.com/ai/nanoid/commit/32b9bdaab1fbc28576b17de8516164ce0360f292"><code>32b9bda</code></a> Allows passing size or custom alphabet via cli as args (<a href="https://github-redirect.dependabot.com/ai/nanoid/issues/334">#334</a>)</li>
+<li><a href="https://github.com/ai/nanoid/commit/246d5f87b6b34e23b5e401bdf3da1f80c810ac4c"><code>246d5f8</code></a> Update vite</li>
+<li><a href="https://github.com/ai/nanoid/commit/afdf9c92b41427f35476fbe14b5af5d73dd7fbdb"><code>afdf9c9</code></a> doc: Fixed Typo (<a href="https://github-redirect.dependabot.com/ai/nanoid/issues/335">#335</a>)</li>
+<li><a href="https://github.com/ai/nanoid/commit/90a446fef3ecaac78e5af2ea01025c4f40182e2b"><code>90a446f</code></a> Update benchmark results</li>
+<li><a href="https://github.com/ai/nanoid/commit/8ba2319b579895cc1f9060b9946a44852f97c509"><code>8ba2319</code></a> bench: add <code>@​napi-rs/uuid</code> v4 (<a href="https://github-redirect.dependabot.com/ai/nanoid/issues/333">#333</a>)</li>
+<li><a href="https://github.com/ai/nanoid/commit/f4257780ece488734a65c176e80c2fd8ab6aab8e"><code>f425778</code></a> Release 3.1.32 version</li>
+<li>Additional commits viewable in <a href="https://github.com/ai/nanoid/compare/3.1.22...3.2.0">compare view</a></li>
+</ul>
+</details>
+<br />
+
+
+[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=nanoid&package-manager=npm_and_yarn&previous-version=3.1.22&new-version=3.2.0)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+
+Dependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.
+
+[//]: # (dependabot-automerge-start)
+[//]: # (dependabot-automerge-end)
+
+---
+
+<details>
+<summary>Dependabot commands and options</summary>
+<br />
+
+You can trigger Dependabot actions by commenting on this PR:
+- `@dependabot rebase` will rebase this PR
+- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it
+- `@dependabot merge` will merge this PR after your CI passes on it
+- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it
+- `@dependabot cancel merge` will cancel a previously requested merge and block automerging
+- `@dependabot reopen` will reopen this PR if it is closed
+- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually
+- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot use these labels` will set the current labels as the default for future PRs for this repo and language
+- `@dependabot use these reviewers` will set the current reviewers as the default for future PRs for this repo and language
+- `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language
+- `@dependabot use this milestone` will set the current milestone as the default for future PRs for this repo and language
+
+You can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/adyen-examples/adyen-java-react-ecommerce-example/network/alerts).
+
+</details>, number=14, title=build(deps): bump nanoid from 3.1.22 to 3.2.0, user=User(login=dependabot[bot], url=https://api.github.com/users/dependabot%5Bbot%5D, type=Bot), state=open, created_at=2022-01-22T10:06:10Z), Issues(repository=adyen-java-react-ecommerce-example, html_url=https://github.com/adyen-examples/adyen-java-react-ecommerce-example/pull/12, body=Bumps [tmpl](https://github.com/daaku/nodejs-tmpl) from 1.0.4 to 1.0.5.
+<details>
+<summary>Commits</summary>
+<ul>
+<li>See full diff in <a href="https://github.com/daaku/nodejs-tmpl/commits/v1.0.5">compare view</a></li>
+</ul>
+</details>
+<br />
+
+
+[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=tmpl&package-manager=npm_and_yarn&previous-version=1.0.4&new-version=1.0.5)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+
+Dependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.
+
+[//]: # (dependabot-automerge-start)
+[//]: # (dependabot-automerge-end)
+
+---
+
+<details>
+<summary>Dependabot commands and options</summary>
+<br />
+
+You can trigger Dependabot actions by commenting on this PR:
+- `@dependabot rebase` will rebase this PR
+- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it
+- `@dependabot merge` will merge this PR after your CI passes on it
+- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it
+- `@dependabot cancel merge` will cancel a previously requested merge and block automerging
+- `@dependabot reopen` will reopen this PR if it is closed
+- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually
+- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot use these labels` will set the current labels as the default for future PRs for this repo and language
+- `@dependabot use these reviewers` will set the current reviewers as the default for future PRs for this repo and language
+- `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language
+- `@dependabot use this milestone` will set the current milestone as the default for future PRs for this repo and language
+
+You can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/adyen-examples/adyen-java-react-ecommerce-example/network/alerts).
+
+</details>, number=12, title=build(deps): bump tmpl from 1.0.4 to 1.0.5, user=User(login=dependabot[bot], url=https://api.github.com/users/dependabot%5Bbot%5D, type=Bot), state=open, created_at=2021-12-08T10:18:13Z), Issues(repository=adyen-java-react-ecommerce-example, html_url=https://github.com/adyen-examples/adyen-java-react-ecommerce-example/pull/11, body=Bumps [tar](https://github.com/npm/node-tar) from 6.1.0 to 6.1.11.
+<details>
+<summary>Commits</summary>
+<ul>
+<li><a href="https://github.com/npm/node-tar/commit/e573aeea19d4d650908b7f6bf0a1ad8dce9f1736"><code>e573aee</code></a> 6.1.11</li>
+<li><a href="https://github.com/npm/node-tar/commit/edb8e9a3fa5869cfb935479a262f6f61b0a2ec57"><code>edb8e9a</code></a> fix: perf regression on hot string munging path</li>
+<li><a href="https://github.com/npm/node-tar/commit/a9d9b05fc974425089922bf66e8e7751ea8bfbbc"><code>a9d9b05</code></a> chore(test): Avoid spurious failures packing node_modules/.cache</li>
+<li><a href="https://github.com/npm/node-tar/commit/24b8bdadf37118182496ecf81fa7a872196fb38b"><code>24b8bda</code></a> fix(test): use posix path for testing path reservations</li>
+<li><a href="https://github.com/npm/node-tar/commit/e5a223c6b293f1cb2ebb2dd97668f787e8983ca4"><code>e5a223c</code></a> fix(test): make unpack test pass on case-sensitive fs</li>
+<li><a href="https://github.com/npm/node-tar/commit/188baddc1d0e6ef5140c7a788f03fc2a6c3df2ea"><code>188badd</code></a> 6.1.10</li>
+<li><a href="https://github.com/npm/node-tar/commit/23312ce7db8a12c78d0fba96d7664a01619266a3"><code>23312ce</code></a> drop dirCache for symlink on all platforms</li>
+<li><a href="https://github.com/npm/node-tar/commit/4f1f4a21fca64f3089da0e83ceea775c66b55052"><code>4f1f4a2</code></a> 6.1.9</li>
+<li><a href="https://github.com/npm/node-tar/commit/875a37e3ec031186fc6599f6807341f56c584598"><code>875a37e</code></a> fix: prevent path escape using drive-relative paths</li>
+<li><a href="https://github.com/npm/node-tar/commit/b6162c7fafe797f856564ef37f4b82747f051455"><code>b6162c7</code></a> fix: reserve paths properly for unicode, windows</li>
+<li>Additional commits viewable in <a href="https://github.com/npm/node-tar/compare/v6.1.0...v6.1.11">compare view</a></li>
+</ul>
+</details>
+<br />
+
+
+[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=tar&package-manager=npm_and_yarn&previous-version=6.1.0&new-version=6.1.11)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+
+Dependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.
+
+[//]: # (dependabot-automerge-start)
+[//]: # (dependabot-automerge-end)
+
+---
+
+<details>
+<summary>Dependabot commands and options</summary>
+<br />
+
+You can trigger Dependabot actions by commenting on this PR:
+- `@dependabot rebase` will rebase this PR
+- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it
+- `@dependabot merge` will merge this PR after your CI passes on it
+- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it
+- `@dependabot cancel merge` will cancel a previously requested merge and block automerging
+- `@dependabot reopen` will reopen this PR if it is closed
+- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually
+- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot use these labels` will set the current labels as the default for future PRs for this repo and language
+- `@dependabot use these reviewers` will set the current reviewers as the default for future PRs for this repo and language
+- `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language
+- `@dependabot use this milestone` will set the current milestone as the default for future PRs for this repo and language
+
+You can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/adyen-examples/adyen-java-react-ecommerce-example/network/alerts).
+
+</details>, number=11, title=build(deps): bump tar from 6.1.0 to 6.1.11, user=User(login=dependabot[bot], url=https://api.github.com/users/dependabot%5Bbot%5D, type=Bot), state=open, created_at=2021-12-08T10:17:32Z), Issues(repository=adyen-java-react-ecommerce-example, html_url=https://github.com/adyen-examples/adyen-java-react-ecommerce-example/pull/10, body=Bumps [semver-regex](https://github.com/sindresorhus/semver-regex) from 3.1.2 to 3.1.3.
+<details>
+<summary>Commits</summary>
+<ul>
+<li>See full diff in <a href="https://github.com/sindresorhus/semver-regex/commits">compare view</a></li>
+</ul>
+</details>
+<br />
+
+
+[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=semver-regex&package-manager=npm_and_yarn&previous-version=3.1.2&new-version=3.1.3)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+
+Dependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.
+
+[//]: # (dependabot-automerge-start)
+[//]: # (dependabot-automerge-end)
+
+---
+
+<details>
+<summary>Dependabot commands and options</summary>
+<br />
+
+You can trigger Dependabot actions by commenting on this PR:
+- `@dependabot rebase` will rebase this PR
+- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it
+- `@dependabot merge` will merge this PR after your CI passes on it
+- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it
+- `@dependabot cancel merge` will cancel a previously requested merge and block automerging
+- `@dependabot reopen` will reopen this PR if it is closed
+- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually
+- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot use these labels` will set the current labels as the default for future PRs for this repo and language
+- `@dependabot use these reviewers` will set the current reviewers as the default for future PRs for this repo and language
+- `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language
+- `@dependabot use this milestone` will set the current milestone as the default for future PRs for this repo and language
+
+You can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/adyen-examples/adyen-java-react-ecommerce-example/network/alerts).
+
+</details>, number=10, title=build(deps): bump semver-regex from 3.1.2 to 3.1.3, user=User(login=dependabot[bot], url=https://api.github.com/users/dependabot%5Bbot%5D, type=Bot), state=open, created_at=2021-12-08T10:06:25Z), Issues(repository=adyen-java-react-ecommerce-example, html_url=https://github.com/adyen-examples/adyen-java-react-ecommerce-example/pull/9, body=Bumps [@npmcli/arborist](https://github.com/npm/arborist) from 2.2.8 to 2.10.0.
+<details>
+<summary>Commits</summary>
+<ul>
+<li><a href="https://github.com/npm/arborist/commit/00e21644608fc1f5a22223038ac3726535fe1402"><code>00e2164</code></a> 2.10.0</li>
+<li><a href="https://github.com/npm/arborist/commit/6bda3e39f3065d0414ff70e6f138c69e5425b1dc"><code>6bda3e3</code></a> disable ws with workspaceEnabled=false and add includeWorkspaceRoot</li>
+<li><a href="https://github.com/npm/arborist/commit/bb4b906ad8692b852a78a7bcb3dd02416ab2d3a9"><code>bb4b906</code></a> 2.9.0</li>
+<li><a href="https://github.com/npm/arborist/commit/50c293dac77c07fe72d42ce04418f11d5c3f02fa"><code>50c293d</code></a> feat(vuln): expose isDirect</li>
+<li><a href="https://github.com/npm/arborist/commit/6baafaab335de1afff501bb16113e0454dd5b768"><code>6baafaa</code></a> 2.8.5</li>
+<li><a href="https://github.com/npm/arborist/commit/5b46b8bcfba9980f90c4a71ac993002d3f2ef884"><code>5b46b8b</code></a> fix: use Intl.Collator for string sorting when available</li>
+<li><a href="https://github.com/npm/arborist/commit/cb91e3ed4e8e7a70713b4f11b1671f8333ce46dd"><code>cb91e3e</code></a> 2.8.4</li>
+<li><a href="https://github.com/npm/arborist/commit/cb623a27fd327b63cd21a4cf96f892d39d1dd308"><code>cb623a2</code></a> fix: avoid infinite loops in peer dep replacements</li>
+<li><a href="https://github.com/npm/arborist/commit/995f885d520c8add2c53aa58b9ff429be95b8802"><code>995f885</code></a> tests: add fixtures for overlapping peer dep sets</li>
+<li><a href="https://github.com/npm/arborist/commit/ddeb2d9792ec2715bb77ac434b9e17255c4df2a0"><code>ddeb2d9</code></a> chore: update settings.yml</li>
+<li>Additional commits viewable in <a href="https://github.com/npm/arborist/compare/v2.2.8...v2.10.0">compare view</a></li>
+</ul>
+</details>
+<br />
+
+
+[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=@npmcli/arborist&package-manager=npm_and_yarn&previous-version=2.2.8&new-version=2.10.0)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+
+Dependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.
+
+[//]: # (dependabot-automerge-start)
+[//]: # (dependabot-automerge-end)
+
+---
+
+<details>
+<summary>Dependabot commands and options</summary>
+<br />
+
+You can trigger Dependabot actions by commenting on this PR:
+- `@dependabot rebase` will rebase this PR
+- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it
+- `@dependabot merge` will merge this PR after your CI passes on it
+- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it
+- `@dependabot cancel merge` will cancel a previously requested merge and block automerging
+- `@dependabot reopen` will reopen this PR if it is closed
+- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually
+- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot use these labels` will set the current labels as the default for future PRs for this repo and language
+- `@dependabot use these reviewers` will set the current reviewers as the default for future PRs for this repo and language
+- `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language
+- `@dependabot use this milestone` will set the current milestone as the default for future PRs for this repo and language
+
+You can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/adyen-examples/adyen-java-react-ecommerce-example/network/alerts).
+
+</details>, number=9, title=build(deps): bump @npmcli/arborist from 2.2.8 to 2.10.0, user=User(login=dependabot[bot], url=https://api.github.com/users/dependabot%5Bbot%5D, type=Bot), state=open, created_at=2021-12-08T10:06:25Z), Issues(repository=adyen-java-react-ecommerce-example, html_url=https://github.com/adyen-examples/adyen-java-react-ecommerce-example/pull/8, body=Update to JHipster 7.4, which means functional components with hooks and redux slices with redux toolkit. 
+
+Still a work in progress, need to test a bit more., number=8, title=Update JHipster to 7.4.0, user=User(login=qurben, url=https://api.github.com/users/qurben, type=User), state=open, created_at=2021-12-02T15:20:54Z), Issues(repository=adyen-java-react-ecommerce-example, html_url=https://github.com/adyen-examples/adyen-java-react-ecommerce-example/pull/7, body=Bumps [axios](https://github.com/axios/axios) from 0.21.1 to 0.21.2.
+<details>
+<summary>Release notes</summary>
+<p><em>Sourced from <a href="https://github.com/axios/axios/releases">axios's releases</a>.</em></p>
+<blockquote>
+<h2>v0.21.2</h2>
+<h3>0.21.2 (September 4, 2021)</h3>
+<p>Fixes and Functionality:</p>
+<ul>
+<li>Updating axios requests to be delayed by pre-emptive promise creation (<a href="https://github-redirect.dependabot.com/axios/axios/pull/2702">#2702</a>)</li>
+<li>Adding &quot;synchronous&quot; and &quot;runWhen&quot; options to interceptors api (<a href="https://github-redirect.dependabot.com/axios/axios/pull/2702">#2702</a>)</li>
+<li>Updating of transformResponse (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3377">#3377</a>)</li>
+<li>Adding ability to omit User-Agent header (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3703">#3703</a>)</li>
+<li>Adding multiple JSON improvements (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3688">#3688</a>, <a href="https://github-redirect.dependabot.com/axios/axios/pull/3763">#3763</a>)</li>
+<li>Fixing quadratic runtime and extra memory usage when setting a maxContentLength (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3738">#3738</a>)</li>
+<li>Adding parseInt to config.timeout (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3781">#3781</a>)</li>
+<li>Adding custom return type support to interceptor (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3783">#3783</a>)</li>
+<li>Adding security fix for ReDoS vulnerability (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3980">#3980</a>)</li>
+</ul>
+<p>Internal and Tests:</p>
+<ul>
+<li>Updating build dev dependancies (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3401">#3401</a>)</li>
+<li>Fixing builds running on Travis CI (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3538">#3538</a>)</li>
+<li>Updating follow rediect version (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3694">#3694</a>, <a href="https://github-redirect.dependabot.com/axios/axios/pull/3771">#3771</a>)</li>
+<li>Updating karma sauce launcher to fix failing sauce tests (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3712">#3712</a>, <a href="https://github-redirect.dependabot.com/axios/axios/pull/3717">#3717</a>)</li>
+<li>Updating content-type header for application/json to not contain charset field, according do RFC 8259 (<a href="https://github-redirect.dependabot.com/axios/axios/pull/2154">#2154</a>)</li>
+<li>Fixing tests by bumping karma-sauce-launcher version (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3813">#3813</a>)</li>
+<li>Changing testing process from Travis CI to GitHub Actions (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3938">#3938</a>)</li>
+</ul>
+<p>Documentation:</p>
+<ul>
+<li>Updating documentation around the use of <code>AUTH_TOKEN</code> with multiple domain endpoints (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3539">#3539</a>)</li>
+<li>Remove duplication of item in changelog (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3523">#3523</a>)</li>
+<li>Fixing gramatical errors (<a href="https://github-redirect.dependabot.com/axios/axios/pull/2642">#2642</a>)</li>
+<li>Fixing spelling error (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3567">#3567</a>)</li>
+<li>Moving gitpod metion (<a href="https://github-redirect.dependabot.com/axios/axios/pull/2637">#2637</a>)</li>
+<li>Adding new axios documentation website link (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3681">#3681</a>, <a href="https://github-redirect.dependabot.com/axios/axios/pull/3707">#3707</a>)</li>
+<li>Updating documentation around dispatching requests (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3772">#3772</a>)</li>
+<li>Adding documentation for the type guard isAxiosError (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3767">#3767</a>)</li>
+<li>Adding explanation of cancel token (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3803">#3803</a>)</li>
+<li>Updating CI status badge (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3953">#3953</a>)</li>
+<li>Fixing errors with JSON documentation (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3936">#3936</a>)</li>
+<li>Fixing README typo under Request Config (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3825">#3825</a>)</li>
+<li>Adding axios-multi-api to the ecosystem file (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3817">#3817</a>)</li>
+<li>Adding SECURITY.md to properly disclose security vulnerabilities (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3981">#3981</a>)</li>
+</ul>
+<p>Huge thanks to everyone who contributed to this release via code (authors listed below) or via reviews and triaging on GitHub:</p>
+<ul>
+<li><a href="https://github.com/axios/axios/blob/HEAD/mailto:jasonsaayman@gmail.com">Jay</a></li>
+<li><a href="https://github.com/SashaKoro">Sasha Korotkov</a></li>
+<li><a href="https://github.com/timemachine3030">Daniel Lopretto</a></li>
+<li><a href="https://github.com/MikeBishop">Mike Bishop</a></li>
+<li><a href="https://github.com/DigitalBrainJS">Dmitriy Mozgovoy</a></li>
+<li><a href="https://github.com/bimbiltu">Mark</a></li>
+</ul>
+<!-- raw HTML omitted -->
+</blockquote>
+<p>... (truncated)</p>
+</details>
+<details>
+<summary>Changelog</summary>
+<p><em>Sourced from <a href="https://github.com/axios/axios/blob/master/CHANGELOG.md">axios's changelog</a>.</em></p>
+<blockquote>
+<h3>0.21.2 (September 4, 2021)</h3>
+<p>Fixes and Functionality:</p>
+<ul>
+<li>Updating axios requests to be delayed by pre-emptive promise creation (<a href="https://github-redirect.dependabot.com/axios/axios/pull/2702">#2702</a>)</li>
+<li>Adding &quot;synchronous&quot; and &quot;runWhen&quot; options to interceptors api (<a href="https://github-redirect.dependabot.com/axios/axios/pull/2702">#2702</a>)</li>
+<li>Updating of transformResponse (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3377">#3377</a>)</li>
+<li>Adding ability to omit User-Agent header (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3703">#3703</a>)</li>
+<li>Adding multiple JSON improvements (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3688">#3688</a>, <a href="https://github-redirect.dependabot.com/axios/axios/pull/3763">#3763</a>)</li>
+<li>Fixing quadratic runtime and extra memory usage when setting a maxContentLength (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3738">#3738</a>)</li>
+<li>Adding parseInt to config.timeout (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3781">#3781</a>)</li>
+<li>Adding custom return type support to interceptor (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3783">#3783</a>)</li>
+<li>Adding security fix for ReDoS vulnerability (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3980">#3980</a>)</li>
+</ul>
+<p>Internal and Tests:</p>
+<ul>
+<li>Updating build dev dependancies (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3401">#3401</a>)</li>
+<li>Fixing builds running on Travis CI (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3538">#3538</a>)</li>
+<li>Updating follow rediect version (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3694">#3694</a>, <a href="https://github-redirect.dependabot.com/axios/axios/pull/3771">#3771</a>)</li>
+<li>Updating karma sauce launcher to fix failing sauce tests (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3712">#3712</a>, <a href="https://github-redirect.dependabot.com/axios/axios/pull/3717">#3717</a>)</li>
+<li>Updating content-type header for application/json to not contain charset field, according do RFC 8259 (<a href="https://github-redirect.dependabot.com/axios/axios/pull/2154">#2154</a>)</li>
+<li>Fixing tests by bumping karma-sauce-launcher version (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3813">#3813</a>)</li>
+<li>Changing testing process from Travis CI to GitHub Actions (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3938">#3938</a>)</li>
+</ul>
+<p>Documentation:</p>
+<ul>
+<li>Updating documentation around the use of <code>AUTH_TOKEN</code> with multiple domain endpoints (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3539">#3539</a>)</li>
+<li>Remove duplication of item in changelog (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3523">#3523</a>)</li>
+<li>Fixing gramatical errors (<a href="https://github-redirect.dependabot.com/axios/axios/pull/2642">#2642</a>)</li>
+<li>Fixing spelling error (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3567">#3567</a>)</li>
+<li>Moving gitpod metion (<a href="https://github-redirect.dependabot.com/axios/axios/pull/2637">#2637</a>)</li>
+<li>Adding new axios documentation website link (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3681">#3681</a>, <a href="https://github-redirect.dependabot.com/axios/axios/pull/3707">#3707</a>)</li>
+<li>Updating documentation around dispatching requests (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3772">#3772</a>)</li>
+<li>Adding documentation for the type guard isAxiosError (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3767">#3767</a>)</li>
+<li>Adding explanation of cancel token (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3803">#3803</a>)</li>
+<li>Updating CI status badge (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3953">#3953</a>)</li>
+<li>Fixing errors with JSON documentation (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3936">#3936</a>)</li>
+<li>Fixing README typo under Request Config (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3825">#3825</a>)</li>
+<li>Adding axios-multi-api to the ecosystem file (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3817">#3817</a>)</li>
+<li>Adding SECURITY.md to properly disclose security vulnerabilities (<a href="https://github-redirect.dependabot.com/axios/axios/pull/3981">#3981</a>)</li>
+</ul>
+<p>Huge thanks to everyone who contributed to this release via code (authors listed below) or via reviews and triaging on GitHub:</p>
+<ul>
+<li><a href="https://github.com/axios/axios/blob/master/mailto:jasonsaayman@gmail.com">Jay</a></li>
+<li><a href="https://github.com/SashaKoro">Sasha Korotkov</a></li>
+<li><a href="https://github.com/timemachine3030">Daniel Lopretto</a></li>
+<li><a href="https://github.com/MikeBishop">Mike Bishop</a></li>
+<li><a href="https://github.com/DigitalBrainJS">Dmitriy Mozgovoy</a></li>
+<li><a href="https://github.com/bimbiltu">Mark</a></li>
+<li><a href="https://github.com/piiih">Philipe Gouveia Paixão</a></li>
+</ul>
+<!-- raw HTML omitted -->
+</blockquote>
+<p>... (truncated)</p>
+</details>
+<details>
+<summary>Commits</summary>
+<ul>
+<li><a href="https://github.com/axios/axios/commit/c0c87610911e1edebc923d0e932fea28cdfddae3"><code>c0c8761</code></a> [Updating] changelog to include links to issues and contributors</li>
+<li><a href="https://github.com/axios/axios/commit/619bb465da374bc152f58280bb64c4aae8b78d4c"><code>619bb46</code></a> [Releasing] v0.21.2</li>
+<li><a href="https://github.com/axios/axios/commit/82c94555917834770bd1389fc0b4cd9ba35ec3fe"><code>82c9455</code></a> Create SECURITY.md (<a href="https://github-redirect.dependabot.com/axios/axios/issues/3981">#3981</a>)</li>
+<li><a href="https://github.com/axios/axios/commit/5b457116e31db0e88fede6c428e969e87f290929"><code>5b45711</code></a> Security fix for ReDoS (<a href="https://github-redirect.dependabot.com/axios/axios/issues/3980">#3980</a>)</li>
+<li><a href="https://github.com/axios/axios/commit/5bc9ea24dda14e74def0b8ae9cdb3fa1a0c77773"><code>5bc9ea2</code></a> Update ECOSYSTEM.md (<a href="https://github-redirect.dependabot.com/axios/axios/issues/3817">#3817</a>)</li>
+<li><a href="https://github.com/axios/axios/commit/e72813a385c32e4c3eeaeb4fcc4437dd124bbbcf"><code>e72813a</code></a> Fixing README.md  (<a href="https://github-redirect.dependabot.com/axios/axios/issues/3818">#3818</a>)</li>
+<li><a href="https://github.com/axios/axios/commit/e10a0270e988a641ba0f01509c4c3ba657afe5a5"><code>e10a027</code></a> Fix README typo under Request Config (<a href="https://github-redirect.dependabot.com/axios/axios/issues/3825">#3825</a>)</li>
+<li><a href="https://github.com/axios/axios/commit/e091491127893a476b0223ab72f788c3b30fc082"><code>e091491</code></a> Update README.md (<a href="https://github-redirect.dependabot.com/axios/axios/issues/3936">#3936</a>)</li>
+<li><a href="https://github.com/axios/axios/commit/b42fbad57b093bb7214991161c5355bd46b864d0"><code>b42fbad</code></a> Removed un-needed bracket</li>
+<li><a href="https://github.com/axios/axios/commit/520c8dccdef92cccbe51ea7cd96ad464c6401914"><code>520c8dc</code></a> Updating CI status badge (<a href="https://github-redirect.dependabot.com/axios/axios/issues/3953">#3953</a>)</li>
+<li>Additional commits viewable in <a href="https://github.com/axios/axios/compare/v0.21.1...v0.21.2">compare view</a></li>
+</ul>
+</details>
+<details>
+<summary>Maintainer changes</summary>
+<p>This version was pushed to npm by <a href="https://www.npmjs.com/~jasonsaayman">jasonsaayman</a>, a new releaser for axios since your current version.</p>
+</details>
+<br />
+
+
+[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=axios&package-manager=npm_and_yarn&previous-version=0.21.1&new-version=0.21.2)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+
+Dependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.
+
+[//]: # (dependabot-automerge-start)
+[//]: # (dependabot-automerge-end)
+
+---
+
+<details>
+<summary>Dependabot commands and options</summary>
+<br />
+
+You can trigger Dependabot actions by commenting on this PR:
+- `@dependabot rebase` will rebase this PR
+- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it
+- `@dependabot merge` will merge this PR after your CI passes on it
+- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it
+- `@dependabot cancel merge` will cancel a previously requested merge and block automerging
+- `@dependabot reopen` will reopen this PR if it is closed
+- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually
+- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot use these labels` will set the current labels as the default for future PRs for this repo and language
+- `@dependabot use these reviewers` will set the current reviewers as the default for future PRs for this repo and language
+- `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language
+- `@dependabot use this milestone` will set the current milestone as the default for future PRs for this repo and language
+
+You can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/adyen-examples/adyen-java-react-ecommerce-example/network/alerts).
+
+</details>, number=7, title=build(deps): bump axios from 0.21.1 to 0.21.2, user=User(login=dependabot[bot], url=https://api.github.com/users/dependabot%5Bbot%5D, type=Bot), state=open, created_at=2021-09-13T14:46:49Z)]
+
+[Issues(repository=adyen-android-online-payments, html_url=https://github.com/adyen-examples/adyen-android-online-payments/issues/7, body=Hello !
+@deepu105 @jlengrand @gcatanese 
+Any chance to upgrade this example app to Android Components 4.4.0 (latest version) ?
+It would be very helpful !
+, number=7, title=Upgrade to Android SDK 4.4.0, user=User(login=rlemasquerier, url=https://api.github.com/users/rlemasquerier, type=User), state=open, created_at=2022-01-21T16:14:16Z), Issues(repository=adyen-android-online-payments, html_url=https://github.com/adyen-examples/adyen-android-online-payments/issues/6, body=Please give some example support for Flutter Framework, I have found some library in pub.dev but these packages not working properly. , number=6, title=Support Flutter, user=User(login=m1narulal1, url=https://api.github.com/users/m1narulal1, type=User), state=open, created_at=2022-01-17T07:49:16Z), Issues(repository=adyen-android-online-payments, html_url=https://github.com/adyen-examples/adyen-android-online-payments/pull/5, body=Bumps [github.com/gin-gonic/gin](https://github.com/gin-gonic/gin) from 1.5.0 to 1.7.0.
+<details>
+<summary>Release notes</summary>
+<p><em>Sourced from <a href="https://github.com/gin-gonic/gin/releases">github.com/gin-gonic/gin's releases</a>.</em></p>
+<blockquote>
+<h2>Release v1.7.0</h2>
+<h3>BUGFIXES</h3>
+<ul>
+<li>fix compile error from <a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2572">#2572</a> (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2600">#2600</a>)</li>
+<li>fix: print headers without Authorization header on broken pipe (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2528">#2528</a>)</li>
+<li>fix(tree): reassign fullpath when register new node (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2366">#2366</a>)</li>
+</ul>
+<h3>ENHANCEMENTS</h3>
+<ul>
+<li>Support params and exact routes without creating conflicts (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2663">#2663</a>)</li>
+<li>chore: improve render string performance (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2365">#2365</a>)</li>
+<li>Sync route tree to httprouter latest code (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2368">#2368</a>)</li>
+<li>chore: rename getQueryCache/getFormCache to initQueryCache/initFormCa (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2375">#2375</a>)</li>
+<li>chore(performance): improve countParams (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2378">#2378</a>)</li>
+<li>Remove some functions that have the same effect as the bytes package (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2387">#2387</a>)</li>
+<li>update:SetMode function (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2321">#2321</a>)</li>
+<li>remove a unused type SecureJSONPrefix (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2391">#2391</a>)</li>
+<li>Add a redirect sample for POST method (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2389">#2389</a>)</li>
+<li>Add CustomRecovery builtin middleware (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2322">#2322</a>)</li>
+<li>binding: avoid 2038 problem on 32-bit architectures (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2450">#2450</a>)</li>
+<li>Prevent panic in Context.GetQuery() when there is no Request (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2412">#2412</a>)</li>
+<li>Add GetUint and GetUint64 method on gin.context (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2487">#2487</a>)</li>
+<li>update content-disposition header to MIME-style (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2512">#2512</a>)</li>
+<li>reduce allocs and improve the render <code>WriteString</code> (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2508">#2508</a>)</li>
+<li>implement &quot;.Unwrap() error&quot; on Error type (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2525">#2525</a>) (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2526">#2526</a>)</li>
+<li>Allow bind with a map[string]string (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2484">#2484</a>)</li>
+<li>chore: update tree (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2371">#2371</a>)</li>
+<li>Support binding for slice/array obj [Rewrite] (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2302">#2302</a>)</li>
+<li>basic auth: fix timing oracle (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2609">#2609</a>)</li>
+<li>Add mixed param and non-param paths (port of httprouter<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/329">#329</a>) (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2663">#2663</a>)</li>
+<li>feat(engine): add trustedproxies and remoteIP (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2632">#2632</a>)</li>
+</ul>
+<h2>Improve performance</h2>
+<h3>ENHANCEMENTS</h3>
+<ul>
+<li>Improve performance: Change <code>*sync.RWMutex</code> to <code>sync.RWMutex</code> in context. <a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2351">#2351</a></li>
+</ul>
+<h2>release v1.6.2</h2>
+<h2>Release Notes</h2>
+<ul>
+<li>BUGFIXES
+<ul>
+<li>fix missing initial sync.RWMutex (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/issues/2305">#2305</a>)</li>
+</ul>
+</li>
+<li>ENHANCEMENTS
+<ul>
+<li>Add set samesite in cookie. (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/issues/2306">#2306</a>)</li>
+</ul>
+</li>
+</ul>
+<h2>Contributors</h2>
+<ul>
+<li><a href="https://github.com/appleboy"><code>@​appleboy</code></a></li>
+</ul>
+<h2>release v1.6.1</h2>
+<!-- raw HTML omitted -->
+</blockquote>
+<p>... (truncated)</p>
+</details>
+<details>
+<summary>Changelog</summary>
+<p><em>Sourced from <a href="https://github.com/gin-gonic/gin/blob/master/CHANGELOG.md">github.com/gin-gonic/gin's changelog</a>.</em></p>
+<blockquote>
+<h2>Gin v1.7.0</h2>
+<h3>BUGFIXES</h3>
+<ul>
+<li>fix compile error from <a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2572">#2572</a> (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2600">#2600</a>)</li>
+<li>fix: print headers without Authorization header on broken pipe (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2528">#2528</a>)</li>
+<li>fix(tree): reassign fullpath when register new node (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2366">#2366</a>)</li>
+</ul>
+<h3>ENHANCEMENTS</h3>
+<ul>
+<li>Support params and exact routes without creating conflicts (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2663">#2663</a>)</li>
+<li>chore: improve render string performance (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2365">#2365</a>)</li>
+<li>Sync route tree to httprouter latest code (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2368">#2368</a>)</li>
+<li>chore: rename getQueryCache/getFormCache to initQueryCache/initFormCa (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2375">#2375</a>)</li>
+<li>chore(performance): improve countParams (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2378">#2378</a>)</li>
+<li>Remove some functions that have the same effect as the bytes package (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2387">#2387</a>)</li>
+<li>update:SetMode function (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2321">#2321</a>)</li>
+<li>remove a unused type SecureJSONPrefix (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2391">#2391</a>)</li>
+<li>Add a redirect sample for POST method (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2389">#2389</a>)</li>
+<li>Add CustomRecovery builtin middleware (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2322">#2322</a>)</li>
+<li>binding: avoid 2038 problem on 32-bit architectures (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2450">#2450</a>)</li>
+<li>Prevent panic in Context.GetQuery() when there is no Request (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2412">#2412</a>)</li>
+<li>Add GetUint and GetUint64 method on gin.context (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2487">#2487</a>)</li>
+<li>update content-disposition header to MIME-style (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2512">#2512</a>)</li>
+<li>reduce allocs and improve the render <code>WriteString</code> (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2508">#2508</a>)</li>
+<li>implement &quot;.Unwrap() error&quot; on Error type (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2525">#2525</a>) (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2526">#2526</a>)</li>
+<li>Allow bind with a map[string]string (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2484">#2484</a>)</li>
+<li>chore: update tree (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2371">#2371</a>)</li>
+<li>Support binding for slice/array obj [Rewrite] (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2302">#2302</a>)</li>
+<li>basic auth: fix timing oracle (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2609">#2609</a>)</li>
+<li>Add mixed param and non-param paths (port of httprouter<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/329">#329</a>) (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2663">#2663</a>)</li>
+<li>feat(engine): add trustedproxies and remoteIP (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2632">#2632</a>)</li>
+</ul>
+<h2>Gin v1.6.3</h2>
+<h3>ENHANCEMENTS</h3>
+<ul>
+<li>Improve performance: Change <code>*sync.RWMutex</code> to <code>sync.RWMutex</code> in context. <a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2351">#2351</a></li>
+</ul>
+<h2>Gin v1.6.2</h2>
+<h3>BUGFIXES</h3>
+<ul>
+<li>fix missing initial sync.RWMutex <a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2305">#2305</a></li>
+</ul>
+<h3>ENHANCEMENTS</h3>
+<ul>
+<li>Add set samesite in cookie. <a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2306">#2306</a></li>
+</ul>
+<h2>Gin v1.6.1</h2>
+<h3>BUGFIXES</h3>
+<ul>
+<li>Revert &quot;fix accept incoming network connections&quot; <a href="https://github-redirect.dependabot.com/gin-gonic/gin/pull/2294">#2294</a></li>
+</ul>
+<!-- raw HTML omitted -->
+</blockquote>
+<p>... (truncated)</p>
+</details>
+<details>
+<summary>Commits</summary>
+<ul>
+<li><a href="https://github.com/gin-gonic/gin/commit/d496f64540b6707602de50ab57aeea8ff4080b74"><code>d496f64</code></a> bump to v1.7.0 version (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/issues/2672">#2672</a>)</li>
+<li><a href="https://github.com/gin-gonic/gin/commit/bfc8ca285eb46dad60e037d57c545cd260636711"><code>bfc8ca2</code></a> feat(engine): add trustedproxies and remoteIP (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/issues/2632">#2632</a>)</li>
+<li><a href="https://github.com/gin-gonic/gin/commit/f3de8132c5d955784deeadb9bcf5752e9fdf0d8c"><code>f3de813</code></a> Add mixed param and non-param paths (port of httprouter#329) (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/issues/2663">#2663</a>)</li>
+<li><a href="https://github.com/gin-gonic/gin/commit/a331dc6a31473b7208c57ec32e14bfcec3062dbb"><code>a331dc6</code></a> chore: remove duplicate test 'assert.Equal' (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/issues/2617">#2617</a>)</li>
+<li><a href="https://github.com/gin-gonic/gin/commit/ed6f85c478ba00e5168be1f29ffcdc9a983568b8"><code>ed6f85c</code></a> build: convert to go:build directives (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/issues/2664">#2664</a>)</li>
+<li><a href="https://github.com/gin-gonic/gin/commit/1bdf86b722026fd650fddfef7fe9bd8342b51b7a"><code>1bdf86b</code></a> Remove the tedious named return value (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/issues/2620">#2620</a>)</li>
+<li><a href="https://github.com/gin-gonic/gin/commit/e899771392ecf35de8ce10a030ed8fed2207e9cb"><code>e899771</code></a> chore: Deleted spaces (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/issues/2622">#2622</a>)</li>
+<li><a href="https://github.com/gin-gonic/gin/commit/b01605bb5b43dbf33781970af5ad6633e5549fd1"><code>b01605b</code></a> basic auth: fix timing oracle (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/issues/2609">#2609</a>)</li>
+<li><a href="https://github.com/gin-gonic/gin/commit/46ddd4259cac975be1eb11b4f1192264f582db16"><code>46ddd42</code></a> Fixes to the graceful shutdown example (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/issues/2552">#2552</a>)</li>
+<li><a href="https://github.com/gin-gonic/gin/commit/f4bc259de33c561fd3b0ae3e7aaa849c1d251c0b"><code>f4bc259</code></a> fix error gin support min Go version (<a href="https://github-redirect.dependabot.com/gin-gonic/gin/issues/2584">#2584</a>)</li>
+<li>Additional commits viewable in <a href="https://github.com/gin-gonic/gin/compare/v1.5.0...v1.7.0">compare view</a></li>
+</ul>
+</details>
+<br />
+
+
+[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=github.com/gin-gonic/gin&package-manager=go_modules&previous-version=1.5.0&new-version=1.7.0)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+
+Dependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.
+
+[//]: # (dependabot-automerge-start)
+[//]: # (dependabot-automerge-end)
+
+---
+
+<details>
+<summary>Dependabot commands and options</summary>
+<br />
+
+You can trigger Dependabot actions by commenting on this PR:
+- `@dependabot rebase` will rebase this PR
+- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it
+- `@dependabot merge` will merge this PR after your CI passes on it
+- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it
+- `@dependabot cancel merge` will cancel a previously requested merge and block automerging
+- `@dependabot reopen` will reopen this PR if it is closed
+- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually
+- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot use these labels` will set the current labels as the default for future PRs for this repo and language
+- `@dependabot use these reviewers` will set the current reviewers as the default for future PRs for this repo and language
+- `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language
+- `@dependabot use this milestone` will set the current milestone as the default for future PRs for this repo and language
+
+You can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/adyen-examples/adyen-android-online-payments/network/alerts).
+
+</details>, number=5, title=Bump github.com/gin-gonic/gin from 1.5.0 to 1.7.0 in /server, user=User(login=dependabot[bot], url=https://api.github.com/users/dependabot%5Bbot%5D, type=Bot), state=open, created_at=2021-09-07T11:54:19Z)]
+
+[Issues(repository=adyen-react-native-online-payments, html_url=https://github.com/adyen-examples/adyen-react-native-online-payments/pull/12, body=Bumps [path-parse](https://github.com/jbgutierrez/path-parse) from 1.0.6 to 1.0.7.
+<details>
+<summary>Commits</summary>
+<ul>
+<li>See full diff in <a href="https://github.com/jbgutierrez/path-parse/commits/v1.0.7">compare view</a></li>
+</ul>
+</details>
+<br />
+
+
+[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=path-parse&package-manager=npm_and_yarn&previous-version=1.0.6&new-version=1.0.7)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+
+Dependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.
+
+[//]: # (dependabot-automerge-start)
+[//]: # (dependabot-automerge-end)
+
+---
+
+<details>
+<summary>Dependabot commands and options</summary>
+<br />
+
+You can trigger Dependabot actions by commenting on this PR:
+- `@dependabot rebase` will rebase this PR
+- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it
+- `@dependabot merge` will merge this PR after your CI passes on it
+- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it
+- `@dependabot cancel merge` will cancel a previously requested merge and block automerging
+- `@dependabot reopen` will reopen this PR if it is closed
+- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually
+- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot use these labels` will set the current labels as the default for future PRs for this repo and language
+- `@dependabot use these reviewers` will set the current reviewers as the default for future PRs for this repo and language
+- `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language
+- `@dependabot use this milestone` will set the current milestone as the default for future PRs for this repo and language
+
+You can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/adyen-examples/adyen-react-native-online-payments/network/alerts).
+
+</details>, number=12, title=Bump path-parse from 1.0.6 to 1.0.7, user=User(login=dependabot[bot], url=https://api.github.com/users/dependabot%5Bbot%5D, type=Bot), state=open, created_at=2021-08-12T15:03:03Z)]
+
+[Issues(repository=adyen-php-online-payments, html_url=https://github.com/adyen-examples/adyen-php-online-payments/issues/12, body=null, number=12, title=Upgrade to PHP 8, user=User(login=jlengrand, url=https://api.github.com/users/jlengrand, type=User), state=open, created_at=2021-12-03T10:26:46Z)]
+
+[Issues(repository=adyen-golang-online-payments, html_url=https://github.com/adyen-examples/adyen-golang-online-payments/issues/8, body=Integrate the new `/sessions` endpoint to leverage on a single API call, number=8, title=Introduce /sessions endpoint, user=User(login=gcatanese, url=https://api.github.com/users/gcatanese, type=User), state=open, created_at=2022-02-14T08:49:12Z)]
+
+[Issues(repository=adyen-vue-online-payments, html_url=https://github.com/adyen-examples/adyen-vue-online-payments/pull/20, body=Bumps [node-fetch](https://github.com/node-fetch/node-fetch) from 2.6.6 to 2.6.7.
+<details>
+<summary>Release notes</summary>
+<p><em>Sourced from <a href="https://github.com/node-fetch/node-fetch/releases">node-fetch's releases</a>.</em></p>
+<blockquote>
+<h2>v2.6.7</h2>
+<h1>Security patch release</h1>
+<p>Recommended to upgrade, to not leak sensitive cookie and authentication header information to 3th party host while a redirect occurred</p>
+<h2>What's Changed</h2>
+<ul>
+<li>fix: don't forward secure headers to 3th party by <a href="https://github.com/jimmywarting"><code>@​jimmywarting</code></a> in <a href="https://github-redirect.dependabot.com/node-fetch/node-fetch/pull/1453">node-fetch/node-fetch#1453</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/node-fetch/node-fetch/compare/v2.6.6...v2.6.7">https://github.com/node-fetch/node-fetch/compare/v2.6.6...v2.6.7</a></p>
+</blockquote>
+</details>
+<details>
+<summary>Commits</summary>
+<ul>
+<li><a href="https://github.com/node-fetch/node-fetch/commit/1ef4b560a17e644a02a3bfdea7631ffeee578b35"><code>1ef4b56</code></a> backport of <a href="https://github-redirect.dependabot.com/node-fetch/node-fetch/issues/1449">#1449</a> (<a href="https://github-redirect.dependabot.com/node-fetch/node-fetch/issues/1453">#1453</a>)</li>
+<li><a href="https://github.com/node-fetch/node-fetch/commit/8fe5c4ea66b9b8187600e6d5ec9b1b6781f44009"><code>8fe5c4e</code></a> 2.x: Specify encoding as an optional peer dependency in package.json (<a href="https://github-redirect.dependabot.com/node-fetch/node-fetch/issues/1310">#1310</a>)</li>
+<li>See full diff in <a href="https://github.com/node-fetch/node-fetch/compare/v2.6.6...v2.6.7">compare view</a></li>
+</ul>
+</details>
+<br />
+
+
+[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=node-fetch&package-manager=npm_and_yarn&previous-version=2.6.6&new-version=2.6.7)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+
+Dependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.
+
+[//]: # (dependabot-automerge-start)
+[//]: # (dependabot-automerge-end)
+
+---
+
+<details>
+<summary>Dependabot commands and options</summary>
+<br />
+
+You can trigger Dependabot actions by commenting on this PR:
+- `@dependabot rebase` will rebase this PR
+- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it
+- `@dependabot merge` will merge this PR after your CI passes on it
+- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it
+- `@dependabot cancel merge` will cancel a previously requested merge and block automerging
+- `@dependabot reopen` will reopen this PR if it is closed
+- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually
+- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot use these labels` will set the current labels as the default for future PRs for this repo and language
+- `@dependabot use these reviewers` will set the current reviewers as the default for future PRs for this repo and language
+- `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language
+- `@dependabot use this milestone` will set the current milestone as the default for future PRs for this repo and language
+
+You can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/adyen-examples/adyen-vue-online-payments/network/alerts).
+
+</details>, number=20, title=Bump node-fetch from 2.6.6 to 2.6.7, user=User(login=dependabot[bot], url=https://api.github.com/users/dependabot%5Bbot%5D, type=Bot), state=open, created_at=2022-03-08T14:57:27Z), Issues(repository=adyen-vue-online-payments, html_url=https://github.com/adyen-examples/adyen-vue-online-payments/issues/19, body=Merge the PRs raised by dependabot (PR #10, PR #12, PR #13, PR #15)
+
+, number=19, title=Address Dependabot vulnerability alerts, user=User(login=gcatanese, url=https://api.github.com/users/gcatanese, type=User), state=open, created_at=2022-02-28T11:07:55Z), Issues(repository=adyen-vue-online-payments, html_url=https://github.com/adyen-examples/adyen-vue-online-payments/issues/18, body=Create Github Actions workflow to make sure the application build works after every push to the main branch, number=18, title=Add workflow, user=User(login=gcatanese, url=https://api.github.com/users/gcatanese, type=User), state=open, created_at=2022-02-28T11:03:08Z), Issues(repository=adyen-vue-online-payments, html_url=https://github.com/adyen-examples/adyen-vue-online-payments/issues/17, body=Sample app runs on 8080. It would be good to refactor this and allow to customise the port (still leaving 8080 as default), number=17, title=Configure HTTP port, user=User(login=gcatanese, url=https://api.github.com/users/gcatanese, type=User), state=open, created_at=2022-02-28T11:01:53Z)]
+
+[Issues(repository=adyen-dotnet-online-payments, html_url=https://github.com/adyen-examples/adyen-dotnet-online-payments/issues/16, body=In the Webhook (WebhookController) add HMAC signature validation like in the other sample apps.
+
+Make sure the response `[accepted]` is only returned when the HMAC validation is successful. , number=16, title=Enable HMAC signature validation, user=User(login=gcatanese, url=https://api.github.com/users/gcatanese, type=User), state=open, created_at=2022-02-08T10:45:08Z), Issues(repository=adyen-dotnet-online-payments, html_url=https://github.com/adyen-examples/adyen-dotnet-online-payments/issues/12, body=null, number=12, title=Add Swish to the list of available payment methods in the demo, user=User(login=jlengrand, url=https://api.github.com/users/jlengrand, type=User), state=open, created_at=2022-01-10T08:15:08Z), Issues(repository=adyen-dotnet-online-payments, html_url=https://github.com/adyen-examples/adyen-dotnet-online-payments/issues/11, body=I am trying to post the "PaymentRequest" object via ajax (JSON.stringify) to server side but i am getting error as "BrowserInfo" is doesn't have parameterless constructor.
+
+Any solution to this?
+
+Thanks., number=11, title=No parameterless constructor defined for this object. Object type 'Adyen.Model.Checkout.BrowserInfo', user=User(login=abhi04-github, url=https://api.github.com/users/abhi04-github, type=User), state=open, created_at=2021-12-21T12:35:47Z), Issues(repository=adyen-dotnet-online-payments, html_url=https://github.com/adyen-examples/adyen-dotnet-online-payments/issues/10, body=Compared to most examples, the dotnet code uses /Home prepended to paths, and uses Checkin instead of checkin.
+
+We have to unformize this to make it easier to upgrade in the future., number=10, title=Uniformize URLs and format with other examples, user=User(login=jlengrand, url=https://api.github.com/users/jlengrand, type=User), state=open, created_at=2021-12-21T10:57:03Z)]
+
+[]
+
+[]
+
+[]
+
+[Issues(repository=adyen-angular-online-payments, html_url=https://github.com/adyen-examples/adyen-angular-online-payments/pull/15, body=Bumps [url-parse](https://github.com/unshiftio/url-parse) from 1.4.7 to 1.5.10.
+<details>
+<summary>Commits</summary>
+<ul>
+<li><a href="https://github.com/unshiftio/url-parse/commit/8cd4c6c6435c1ea32243ec20c9cfe535251ec524"><code>8cd4c6c</code></a> 1.5.10</li>
+<li><a href="https://github.com/unshiftio/url-parse/commit/ce7a01f2e10738b17812f57c7b6b5de4ea4c0298"><code>ce7a01f</code></a> [fix] Improve handling of empty port</li>
+<li><a href="https://github.com/unshiftio/url-parse/commit/00714900ea1e8ba0a1f87b9f8399001e47f060ec"><code>0071490</code></a> [doc] Update JSDoc comment</li>
+<li><a href="https://github.com/unshiftio/url-parse/commit/a7044e3e8bb2308ac0f74264d01951aeaca0d66f"><code>a7044e3</code></a> [minor] Use more descriptive variable name</li>
+<li><a href="https://github.com/unshiftio/url-parse/commit/d547792414a414b2f341a805141beafee728addf"><code>d547792</code></a> [security] Add credits for CVE-2022-0691</li>
+<li><a href="https://github.com/unshiftio/url-parse/commit/ad23357ad5fd9a6b011d049466e9ecff723e52b8"><code>ad23357</code></a> 1.5.9</li>
+<li><a href="https://github.com/unshiftio/url-parse/commit/0e3fb542d60ddbf6933f22eb9b1e06e25eaa5b63"><code>0e3fb54</code></a> [fix] Strip all control characters from the beginning of the URL</li>
+<li><a href="https://github.com/unshiftio/url-parse/commit/61864a8eccff714a45d23db85a814e3c6ee0baba"><code>61864a8</code></a> [security] Add credits for CVE-2022-0686</li>
+<li><a href="https://github.com/unshiftio/url-parse/commit/bb0104d6439cf7c2662afbd9411e0772a9639664"><code>bb0104d</code></a> 1.5.8</li>
+<li><a href="https://github.com/unshiftio/url-parse/commit/d5c64791ef496ca5459ae7f2176a31ea53b127e5"><code>d5c6479</code></a> [fix] Handle the case where the port is specified but empty</li>
+<li>Additional commits viewable in <a href="https://github.com/unshiftio/url-parse/compare/1.4.7...1.5.10">compare view</a></li>
+</ul>
+</details>
+<br />
+
+
+[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=url-parse&package-manager=npm_and_yarn&previous-version=1.4.7&new-version=1.5.10)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+
+Dependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.
+
+[//]: # (dependabot-automerge-start)
+[//]: # (dependabot-automerge-end)
+
+---
+
+<details>
+<summary>Dependabot commands and options</summary>
+<br />
+
+You can trigger Dependabot actions by commenting on this PR:
+- `@dependabot rebase` will rebase this PR
+- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it
+- `@dependabot merge` will merge this PR after your CI passes on it
+- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it
+- `@dependabot cancel merge` will cancel a previously requested merge and block automerging
+- `@dependabot reopen` will reopen this PR if it is closed
+- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually
+- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot use these labels` will set the current labels as the default for future PRs for this repo and language
+- `@dependabot use these reviewers` will set the current reviewers as the default for future PRs for this repo and language
+- `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language
+- `@dependabot use this milestone` will set the current milestone as the default for future PRs for this repo and language
+
+You can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/adyen-examples/adyen-angular-online-payments/network/alerts).
+
+</details>, number=15, title=Bump url-parse from 1.4.7 to 1.5.10 in /checkout, user=User(login=dependabot[bot], url=https://api.github.com/users/dependabot%5Bbot%5D, type=Bot), state=open, created_at=2022-02-27T23:29:48Z), Issues(repository=adyen-angular-online-payments, html_url=https://github.com/adyen-examples/adyen-angular-online-payments/pull/13, body=Bumps [hosted-git-info](https://github.com/npm/hosted-git-info) from 2.8.8 to 2.8.9.
+<details>
+<summary>Changelog</summary>
+<p><em>Sourced from <a href="https://github.com/npm/hosted-git-info/blob/v2.8.9/CHANGELOG.md">hosted-git-info's changelog</a>.</em></p>
+<blockquote>
+<h2><a href="https://github.com/npm/hosted-git-info/compare/v2.8.8...v2.8.9">2.8.9</a> (2021-04-07)</h2>
+<h3>Bug Fixes</h3>
+<ul>
+<li>backport regex fix from <a href="https://github-redirect.dependabot.com/npm/hosted-git-info/issues/76">#76</a> (<a href="https://github.com/npm/hosted-git-info/commit/29adfe5">29adfe5</a>), closes <a href="https://github-redirect.dependabot.com/npm/hosted-git-info/issues/84">#84</a></li>
+</ul>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+</blockquote>
+</details>
+<details>
+<summary>Commits</summary>
+<ul>
+<li><a href="https://github.com/npm/hosted-git-info/commit/8d4b3697d79bcd89cdb36d1db165e3696c783a01"><code>8d4b369</code></a> chore(release): 2.8.9</li>
+<li><a href="https://github.com/npm/hosted-git-info/commit/29adfe5ef789784c861b2cdeb15051ec2ba651a7"><code>29adfe5</code></a> fix: backport regex fix from <a href="https://github-redirect.dependabot.com/npm/hosted-git-info/issues/76">#76</a></li>
+<li>See full diff in <a href="https://github.com/npm/hosted-git-info/compare/v2.8.8...v2.8.9">compare view</a></li>
+</ul>
+</details>
+<details>
+<summary>Maintainer changes</summary>
+<p>This version was pushed to npm by <a href="https://www.npmjs.com/~nlf">nlf</a>, a new releaser for hosted-git-info since your current version.</p>
+</details>
+<br />
+
+
+[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=hosted-git-info&package-manager=npm_and_yarn&previous-version=2.8.8&new-version=2.8.9)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+
+Dependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.
+
+[//]: # (dependabot-automerge-start)
+[//]: # (dependabot-automerge-end)
+
+---
+
+<details>
+<summary>Dependabot commands and options</summary>
+<br />
+
+You can trigger Dependabot actions by commenting on this PR:
+- `@dependabot rebase` will rebase this PR
+- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it
+- `@dependabot merge` will merge this PR after your CI passes on it
+- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it
+- `@dependabot cancel merge` will cancel a previously requested merge and block automerging
+- `@dependabot reopen` will reopen this PR if it is closed
+- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually
+- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot use these labels` will set the current labels as the default for future PRs for this repo and language
+- `@dependabot use these reviewers` will set the current reviewers as the default for future PRs for this repo and language
+- `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language
+- `@dependabot use this milestone` will set the current milestone as the default for future PRs for this repo and language
+
+You can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/adyen-examples/adyen-angular-online-payments/network/alerts).
+
+</details>, number=13, title=Bump hosted-git-info from 2.8.8 to 2.8.9 in /checkout, user=User(login=dependabot[bot], url=https://api.github.com/users/dependabot%5Bbot%5D, type=Bot), state=open, created_at=2022-02-15T13:27:30Z), Issues(repository=adyen-angular-online-payments, html_url=https://github.com/adyen-examples/adyen-angular-online-payments/pull/12, body=Bumps [lodash](https://github.com/lodash/lodash) from 4.17.20 to 4.17.21.
+<details>
+<summary>Commits</summary>
+<ul>
+<li><a href="https://github.com/lodash/lodash/commit/f299b52f39486275a9e6483b60a410e06520c538"><code>f299b52</code></a> Bump to v4.17.21</li>
+<li><a href="https://github.com/lodash/lodash/commit/c4847ebe7d14540bb28a8b932a9ce1b9ecbfee1a"><code>c4847eb</code></a> Improve performance of <code>toNumber</code>, <code>trim</code> and <code>trimEnd</code> on large input strings</li>
+<li><a href="https://github.com/lodash/lodash/commit/3469357cff396a26c363f8c1b5a91dde28ba4b1c"><code>3469357</code></a> Prevent command injection through <code>_.template</code>'s <code>variable</code> option</li>
+<li>See full diff in <a href="https://github.com/lodash/lodash/compare/4.17.20...4.17.21">compare view</a></li>
+</ul>
+</details>
+<br />
+
+
+[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=lodash&package-manager=npm_and_yarn&previous-version=4.17.20&new-version=4.17.21)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+
+Dependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.
+
+[//]: # (dependabot-automerge-start)
+[//]: # (dependabot-automerge-end)
+
+---
+
+<details>
+<summary>Dependabot commands and options</summary>
+<br />
+
+You can trigger Dependabot actions by commenting on this PR:
+- `@dependabot rebase` will rebase this PR
+- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it
+- `@dependabot merge` will merge this PR after your CI passes on it
+- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it
+- `@dependabot cancel merge` will cancel a previously requested merge and block automerging
+- `@dependabot reopen` will reopen this PR if it is closed
+- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually
+- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot use these labels` will set the current labels as the default for future PRs for this repo and language
+- `@dependabot use these reviewers` will set the current reviewers as the default for future PRs for this repo and language
+- `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language
+- `@dependabot use this milestone` will set the current milestone as the default for future PRs for this repo and language
+
+You can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/adyen-examples/adyen-angular-online-payments/network/alerts).
+
+</details>, number=12, title=Bump lodash from 4.17.20 to 4.17.21 in /checkout, user=User(login=dependabot[bot], url=https://api.github.com/users/dependabot%5Bbot%5D, type=Bot), state=open, created_at=2022-02-15T13:26:46Z), Issues(repository=adyen-angular-online-payments, html_url=https://github.com/adyen-examples/adyen-angular-online-payments/pull/11, body=Bumps [ssri](https://github.com/npm/ssri) from 6.0.1 to 6.0.2.
+<details>
+<summary>Changelog</summary>
+<p><em>Sourced from <a href="https://github.com/npm/ssri/blob/v6.0.2/CHANGELOG.md">ssri's changelog</a>.</em></p>
+<blockquote>
+<h2><a href="https://github.com/zkat/ssri/compare/v6.0.1...v6.0.2">6.0.2</a> (2021-04-07)</h2>
+<h3>Bug Fixes</h3>
+<ul>
+<li>backport regex change from 8.0.1 (<a href="https://github.com/zkat/ssri/commit/b30dfdb">b30dfdb</a>), closes <a href="https://github-redirect.dependabot.com/zkat/ssri/issues/19">#19</a></li>
+</ul>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+</blockquote>
+</details>
+<details>
+<summary>Commits</summary>
+<ul>
+<li><a href="https://github.com/npm/ssri/commit/b7c8c7c61db89aeb9fbf7596c0ef17071bc216ef"><code>b7c8c7c</code></a> chore(release): 6.0.2</li>
+<li><a href="https://github.com/npm/ssri/commit/b30dfdb00bb94ddc49a25a85a18fb27afafdfbb1"><code>b30dfdb</code></a> fix: backport regex change from 8.0.1</li>
+<li>See full diff in <a href="https://github.com/npm/ssri/compare/v6.0.1...v6.0.2">compare view</a></li>
+</ul>
+</details>
+<details>
+<summary>Maintainer changes</summary>
+<p>This version was pushed to npm by <a href="https://www.npmjs.com/~nlf">nlf</a>, a new releaser for ssri since your current version.</p>
+</details>
+<br />
+
+
+[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=ssri&package-manager=npm_and_yarn&previous-version=6.0.1&new-version=6.0.2)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+
+Dependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.
+
+[//]: # (dependabot-automerge-start)
+[//]: # (dependabot-automerge-end)
+
+---
+
+<details>
+<summary>Dependabot commands and options</summary>
+<br />
+
+You can trigger Dependabot actions by commenting on this PR:
+- `@dependabot rebase` will rebase this PR
+- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it
+- `@dependabot merge` will merge this PR after your CI passes on it
+- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it
+- `@dependabot cancel merge` will cancel a previously requested merge and block automerging
+- `@dependabot reopen` will reopen this PR if it is closed
+- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually
+- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot use these labels` will set the current labels as the default for future PRs for this repo and language
+- `@dependabot use these reviewers` will set the current reviewers as the default for future PRs for this repo and language
+- `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language
+- `@dependabot use this milestone` will set the current milestone as the default for future PRs for this repo and language
+
+You can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/adyen-examples/adyen-angular-online-payments/network/alerts).
+
+</details>, number=11, title=Bump ssri from 6.0.1 to 6.0.2 in /checkout, user=User(login=dependabot[bot], url=https://api.github.com/users/dependabot%5Bbot%5D, type=Bot), state=open, created_at=2022-02-15T13:26:34Z)]
+
+[]
+
+[Issues(repository=adyen-testing-suite, html_url=https://github.com/adyen-examples/adyen-testing-suite/issues/2, body=The Credit Card payment test scenario currently verifies the Credit Card form is filled. Extend the test case to include an actual payment.
+
+Note: Credit Card number text field and CVC are included within an iframe (security reasons), number=2, title=Credit Card test scenario, user=User(login=gcatanese, url=https://api.github.com/users/gcatanese, type=User), state=open, created_at=2022-03-11T09:58:45Z), Issues(repository=adyen-testing-suite, html_url=https://github.com/adyen-examples/adyen-testing-suite/issues/1, body=When following the READMe, it looks like some dependencies are not installed when trying to run the test suite : 
+
+
+```
+
+
+  3) [chromium] › ideal.spec.js:4:1 › iDEAL ========================================================
+
+    browserType.launch: Executable doesn't exist at /Users/julien/Library/Caches/ms-playwright/chromium-939194/chrome-mac/Chromium.app/Contents/MacOS/Chromium
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+
+```, number=1, title=Following the README leads to an error, user=User(login=jlengrand, url=https://api.github.com/users/jlengrand, type=User), state=open, created_at=2022-02-16T09:52:29Z)]
+
+[Issues(repository=AdyenCheckoutsJS, html_url=https://github.com/adyen-examples/AdyenCheckoutsJS/pull/1, body=* Updates environment variable values to match the samples
+* Removes PHP setup for clarification, number=1, title=WIP : Simplifies repo and Cleansup, user=User(login=jlengrand, url=https://api.github.com/users/jlengrand, type=User), state=open, created_at=2022-03-09T09:03:56Z)]
+
+[]
